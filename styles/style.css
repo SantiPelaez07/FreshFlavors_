@@ -92,7 +92,7 @@ body{
 
 
 .containers {
-    height: 70%; /* Opcional: Para ocupar el 100% de la altura de la ventana */
+    height: 75%; /* Opcional: Para ocupar el 100% de la altura de la ventana */
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
@@ -152,4 +152,9 @@ body{
     background-color: var(--white-color);
     color: var(--black-color);
     font-size: 18px;
+}
+
+/* Cambios para el cuarto container */
+.recommended-books button{
+    width: 30%;
 }
