@@ -105,6 +105,7 @@ body{
     width: 80%;
     display: flex;
     gap: 150px;
+    max-height: 80%;
 }
 
 
