@@ -8,6 +8,13 @@
     <!--Iconos de boostrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="shortcut icon" href="imagenes/Icono.png" type="image/x-icon">
+    <!--Email js-->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+    emailjs.init('ge6IqJR0gEI3Jvq-Q')
+</script>
     <title>FreshFlavors</title>
 </head>
 
@@ -84,9 +91,12 @@
     
     <div class="container-form">
         <h3>No te pierdas de nada!</h3>
-        <form class="form" action="">
-            <input type="text" placeholder="Ingresa tu email" name="email">
-            <button>Suscríbete</button>
+        <form class="form" action="" id="form">
+
+            <input type="text" name="email_id" id="email_id" placeholder="Ingresa tu email">
+            <button type="submit" id="button" value="Send Email">Suscríbete</button>
+            <!-- <label for="email_id">email_id</label>
+            <input type="text" name="email_id" id="email_id"> -->
         </form>
     </div>
 <div class="sections_footer">
