@@ -49,7 +49,7 @@ body{
 }
 
 section{
-    padding: 150px
+    padding: 200px
 }
 .main-content{
    display: flex;
@@ -60,12 +60,13 @@ section{
 
 .main-title{
     color: var(--white-color);
-    font-size: clamp(1rem, -1.5rem + 8vw, 3rem);
+    font-size: clamp(1rem, -0.8rem + 8vw, 3rem);
     text-align: center;
     margin-bottom: 20px;
 }
 
 .input_ingredients{
+    min-width: max-content;
     margin-top: 15px;
     width: 40%;
     height: 40px;
@@ -111,7 +112,7 @@ section{
 
 
 .containers_content{
-    width: 80%;
+    width: 100%;
     display: flex;
     gap: 150px;
     max-height: 80%;
@@ -262,4 +263,55 @@ section{
     cursor: pointer;
     margin-left: 25px;
     font-size: 25px;
+    color: rgb(0, 0, 0);
 }
+
+@media only screen and (max-width: 980px) {
+
+    .containers_content{
+        min-width: 200px;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .containers_content button{
+        min-width: fit-content;
+
+    }
+
+    .containers_content img{
+        min-width: 80%;
+        min-height: 80%;
+    }
+
+    .content_titles,
+    .content_paragraphs
+    {
+        text-align: center;
+    }
+
+
+    section{
+        padding: 60px
+    }
+    .content_paragraphs{
+        width: 100%;
+    }
+
+    .content{
+        align-items: center;
+    }
+
+    .recipes{
+        order: 1;
+    }
+
+    .content button i{
+        display: none;
+    }
+
+
+  
+    /* Otros estilos específicos para pantallas más grandes */
+  }
