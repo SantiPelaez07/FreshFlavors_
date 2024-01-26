@@ -33,7 +33,7 @@ body{
 
 /* Sección del primer container */
 .first-container {
-    height: 100vh; /* Opcional: Para ocupar el 100% de la altura de la ventana */
+    height: 100%; /* Opcional: Para ocupar el 100% de la altura de la ventana */
     background-image: linear-gradient(
         rgba(0,0,0,0.7),
         rgba(0,0,0,0.7)),
@@ -49,7 +49,7 @@ body{
 }
 
 section{
-    padding: 200px
+    padding: 200px 10%
 }
 .main-content{
    display: flex;
@@ -121,6 +121,8 @@ section{
 
 
 .containers_content img{
+    min-width: 500px;
+    min-height: 500px;
     width: 40%;
     height: 100%;
     border-radius: 10px;
@@ -153,6 +155,7 @@ section{
 
 .content_paragraphs{
     font-size: 21px;
+    min-width: 350px;
 }
 
 
@@ -267,7 +270,7 @@ section{
     color: rgb(0, 0, 0);
 }
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 1100px) {
 
     .containers_content{
         min-width: 200px;
@@ -364,3 +367,117 @@ section{
   
     /* Otros estilos específicos para pantallas más grandes */
   }
+
+
+  /* Nav Bar */
+  .nav-principal {
+    width: 100%;
+    height: 70px;
+    background: #F6BC4E;
+    position: fixed;
+}
+
+.nav-principal ul { 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav-principal ul li {
+    list-style: none;
+}
+
+.nav-principal ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+
+.nav-principal ul li {
+    position: relative;
+    overflow: hidden;
+    transition: .2s;
+    padding: 5px;
+}
+
+
+.nav-principal ul li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    transition: left .6s;
+}
+
+.nav-principal ul li:hover::after{
+    left: 0;
+}
+
+
+.nav-principal .logo img {
+    height: 50px;
+    width: 170px;
+}
+
+.nav-principal .suscription {
+    padding: 15px 50px;
+}
+
+.nav-principal .main-options .checkbtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 6%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-principal #check {
+    display: none;
+}
+
+
+@media (max-width: 939px) {
+    .nav-principal .logo img {
+        height: 50px;
+        width: 180px;
+    }
+
+    .nav-principal ul li a, .suscription {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 858px) {
+    .nav-principal .main-options .checkbtn {
+        display: block;
+        transition: .7s;
+    }
+
+    .nav-principal ul {
+        position: fixed;
+        width: 100vw;
+        height: 25vh;
+        background: green;
+        top: 68px;  
+        transition: all .8s;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        left: -100%;
+        padding: 0;
+    }
+
+    #check:checked ~ .nav-principal ul {
+        left: 0;
+    }
+
+    .nav-principal ul .logo img {
+        display: none;
+    } 
+}
