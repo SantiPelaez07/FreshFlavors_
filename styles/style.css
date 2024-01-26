@@ -370,11 +370,19 @@ section{
 
 
   /* Nav Bar */
-  .nav-principal {
+  header{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav-principal {
+    position: fixed;
     width: 100%;
     height: 70px;
-    background: #F6BC4E;
-    position: fixed;
+    background: #F6BC4E;    
 }
 
 .nav-principal ul { 
@@ -391,14 +399,14 @@ section{
 .nav-principal ul li a{
     text-decoration: none;
     color: #fff;
-    padding: 10px;
+    padding: 15px;
 }
 
 .nav-principal ul li {
     position: relative;
     overflow: hidden;
     transition: .2s;
-    padding: 5px;
+    padding: 15px;
 }
 
 
@@ -427,20 +435,35 @@ section{
     padding: 15px 50px;
 }
 
-.nav-principal .main-options .checkbtn {
+.nav-principal .openSidebar {
     font-size: 30px;
     color: #fff;
-    float: right;
-    line-height: 80px;
-    margin-right: 6%;
+    border: 0;
     cursor: pointer;
+    background-color: transparent;
+    position: absolute;
+    right:30px ;
+    top: 20px;
+    display: none;
+
+}
+
+.hidden{
+    left: -100%;
+}
+
+.show{
+    left: 0;
+}
+
+.nav-principal .openSidebar{
     display: none;
 }
 
-.nav-principal #check {
+
+.nav-principal .logo-mobile {
     display: none;
 }
-
 
 @media (max-width: 939px) {
     .nav-principal .logo img {
@@ -454,28 +477,34 @@ section{
 }
 
 @media (max-width: 858px) {
-    .nav-principal .main-options .checkbtn {
+    .nav-principal .logo-mobile {
         display: block;
-        transition: .7s;
+
     }
 
-    .nav-principal ul {
+    .nav-principal .openSidebar{
+        display: block;
+    }
+
+    .nav-principal .logo-mobile img {
+        width: 180px;
+        height: 50px;
+        margin: 10px;
+    }
+
+    .nav-principal #sidebar {
         position: fixed;
         width: 100vw;
-        height: 25vh;
-        background: green;
-        top: 68px;  
+        height: 35vh;
+        background: #000000;
+        top: 56px;  
         transition: all .8s;
         display: flex;
         flex-direction: column;
         justify-content: start;
-        left: -100%;
         padding: 0;
     }
 
-    #check:checked ~ .nav-principal ul {
-        left: 0;
-    }
 
     .nav-principal ul .logo img {
         display: none;

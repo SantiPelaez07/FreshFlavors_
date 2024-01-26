@@ -1,5 +1,3 @@
-
-
 const btn = document.getElementById('button');
 const input = document.getElementById("email_id")
 
@@ -29,3 +27,13 @@ document.getElementById('form')
 
 
 });
+
+
+//Animación del responsive del NavBar
+const btnopenSidebar = document.querySelector(".openSidebar")
+const sidebar = document.querySelector("#sidebar")
+
+btnopenSidebar.addEventListener("click" , (e) => {
+e.preventDefault()
+sidebar.classList.toggle("show")
+})  
