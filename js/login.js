@@ -6,23 +6,33 @@ const sign_up_btn2 = document.querySelector("#sign-up-btn2");
 
 
 sign_up_btn.addEventListener("click",() => {
-    console.log("hice click");
   container.classList.toggle("sign-up-mode");
 });
 
 sign_in_btn.addEventListener("click",() => {
-    console.log("hice click");
   container.classList.toggle("sign-up-mode");
 });
 
 sign_up_btn2.addEventListener("click",(e) => {
   e.preventDefault()
-  console.log("hice click");
 container.classList.toggle("sign-up-mode2");
 });
 
 sign_in_btn2.addEventListener("click",(e) => {
   e.preventDefault()
-  console.log("hice click");
 container.classList.toggle("sign-in-mode2");
 });
+
+
+//Json server.
+const formularioRegistro = document.querySelector(".sign-up-form")
+
+formularioRegistro.addEventListener("submit", (e) => {
+  e.preventDefault();
+  obtenerData();
+})
+
+
+function obtenerData() {
+  
+}
