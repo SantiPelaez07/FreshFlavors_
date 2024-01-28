@@ -145,6 +145,15 @@ section{
     font-size: 18px;
     margin-top: 25px;
     padding: 5px;
+    transition: 0.5s;
+    border: none;
+}
+
+.content button:hover{
+    background: #f8b435;
+    color: #000000;
+    font-weight: bold;
+    border: 1px solid #000000;
 }
 
 .content_titles{

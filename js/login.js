@@ -1,4 +1,22 @@
 
+document.addEventListener('DOMContentLoaded', function() {
+  const name = document.querySelector(".suscription");
+  const usuario = localStorage.getItem('usuario');
+  if (usuario) {
+    name.style.color = "black"
+    name.style.fontWeight = 'bold';
+    name.innerHTML = `${usuario}`;
+    localStorage.removeItem('usuario');
+
+      Swal.fire({
+        title: `Bienvenido ${usuario}`,
+        icon: "info"
+      })
+
+
+    // Limpiar después de usarlo
+  }
+});
 const sign_in_btn = document.querySelector("#sign-in-btn");
 const sign_up_btn = document.querySelector("#sign-up-btn");
 const container = document.querySelector(".container")
@@ -29,21 +47,13 @@ container.classList.toggle("sign-in-mode2");
 
 
 
-
+    
 
 
 //Formularios
 
 
 
-document.addEventListener('DOMContentLoaded', function() {
-  const name = document.querySelector(".suscription");
-  const usuario = localStorage.getItem('usuario');
-  if (usuario) {
-    name.innerHTML = `${usuario}`;
-    localStorage.removeItem('usuario');  // Limpiar después de usarlo
-  }
-});
 
 
 const formularioRegistro = document.querySelector(".sign-up-form")
@@ -71,11 +81,20 @@ formularioLogin.addEventListener("submit", async (e) => {
     const usuarioValido = data.find((entry) => entry.user === user && entry.password === password);
 
     if (usuarioValido) {
-      alert("Inicio de sesión exitoso");
-      localStorage.setItem('usuario', user);
-      window.location.href = '../index.html';      
+      Swal.fire({
+        title: "Inicio de sesión exitoso",
+        icon: "success"
+      }).then((result) => {
+        if (result.isConfirmed || result.isDismissed) {
+          localStorage.setItem('usuario', user);
+          window.location.href = '../index.html';
+        } 
+      })     
     }else{
-      alert("Usuario no registrado")
+      Swal.fire({
+        title: "Usuario no registrado",
+        icon: "error"
+      });
     }
 
   } catch (error) {
@@ -102,7 +121,15 @@ async function obtenerDataRegistro() {
     });
 
     if (response.ok) {
-      alert("Usuario registrado exitosamente")
+      Swal.fire({
+        title: "Registro exitoso",
+        icon: "success"
+      }).then((result) => {
+        if (result.isConfirmed || result.isDismissed) {
+          location.reload(); 
+        }
+        
+      })
       console.log("Usuario registrado exitosamente");
       // Puedes realizar acciones adicionales aquí después de un registro exitoso.
     } else {
