@@ -29,6 +29,11 @@ document.getElementById('form')
 });
 
 
+
+
+
+
+
 //Animación del responsive del NavBar
 const btnopenSidebar = document.querySelector(".openSidebar")
 const sidebar = document.querySelector("#sidebar")

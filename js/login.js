@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         title: `Bienvenido ${usuario}`,
         icon: "info"
       })
-
+s
 
     // Limpiar después de usarlo
   }
