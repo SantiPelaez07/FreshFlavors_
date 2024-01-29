@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/92bb7e2b75.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/login_register.css">
+    <title>Ingresar - Crear cuenta</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="singin-signup">
+            <form action="" class="sign-in-form">
+                <h2 class="title">Iniciar sesión</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Usuario" id="sign-in-user" name="sign-in-user">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Contraseña" id="sign-in-password" name="sign-in-password">
+                </div>
+                <input type="submit" value="Iniciar" class="btn">
+                <p class="social-text">O Ingresa con tus redes sociales</p>
+                <div class="social-media">
+                    <a href="" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <p class="account-text">¿No tienes una cuenta? <a href="" id="sign-up-btn2">Registrate</a></p>
+            </form>
+
+
+
+            <form action="" class="sign-up-form">
+                <h2 class="title">Registro</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Usuario" id="sign-up-user" name="sign-up-user">
+                </div>
+                <div class="input-field">
+                    <i class="fas far fa-envelope"></i>
+                    <input type="text" placeholder="Email" id="sign-up-email" name="sign-up-email">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Contraseña" id="sign-up-password" name="sign-up-password">
+                </div>
+                <input type="submit" value="Registrar" class="btn">
+                <p class="social-text">O Ingresa con tus redes sociales</p>
+                <div class="social-media">
+                    <a href="" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <p class="account-text">¿Ya tienes una cuenta?<a href="" id="sign-in-btn2">Ingresa</a></p>
+            </form>
+        </div>
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>¿Eres miembro de freshFlavors?</h3>
+                    <p>¡Bienvenido de vuelta a FreshFlavors! ¿Estás listo para sumergirte en el mundo de sabores frescos? Inicia sesión ahora para acceder a tus recetas favoritas.</p>
+                    <button class="btn" id="sign-in-btn">Inicia sesión</button>
+                    <img src="imagenes/cocinando.svg" alt="kitchen" srcset="" class="image">
+                </div>
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>¿Usuario nuevo?</h3>
+                    <p>"¡Bienvenido a FreshFlavors, donde los sabores frescos se encuentran con la creatividad culinaria! Regístrate ahora para descubrir un mundo de recetas emocionantes.</p>
+                    <button class="btn" id="sign-up-btn">Registrate</button>
+                    <img src="imagenes/registrarse.svg" alt="register" srcset="" class="image">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/login.js"></script>
+
+</body>
+
+</html>
+
+
+<!-- https://www.youtube.com/watch?v=aAyxSExhwW4 25:30 -->

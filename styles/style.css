@@ -33,11 +33,11 @@ body{
 
 /* Sección del primer container */
 .first-container {
-    height: 100vh; /* Opcional: Para ocupar el 100% de la altura de la ventana */
+    height: 100%; /* Opcional: Para ocupar el 100% de la altura de la ventana */
     background-image: linear-gradient(
         rgba(0,0,0,0.7),
         rgba(0,0,0,0.7)),
-        url("../imagenes/prueba.jpg");
+        url("../imagenes/prueba.webp");
 
     background-size: cover; /* Ajusta el tamaño de la imagen para cubrir completamente el contenedor */
     background-position: center; /* Centra la imagen en el contenedor */
@@ -49,7 +49,7 @@ body{
 }
 
 section{
-    padding: 200px
+    padding: 200px 10%
 }
 .main-content{
    display: flex;
@@ -121,6 +121,8 @@ section{
 
 
 .containers_content img{
+    min-width: 500px;
+    min-height: 500px;
     width: 40%;
     height: 100%;
     border-radius: 10px;
@@ -143,6 +145,15 @@ section{
     font-size: 18px;
     margin-top: 25px;
     padding: 5px;
+    transition: 0.5s;
+    border: none;
+}
+
+.content button:hover{
+    background: #f8b435;
+    color: #000000;
+    font-weight: bold;
+    border: 1px solid #000000;
 }
 
 .content_titles{
@@ -153,6 +164,7 @@ section{
 
 .content_paragraphs{
     font-size: 21px;
+    min-width: 350px;
 }
 
 
@@ -267,7 +279,7 @@ section{
     color: rgb(0, 0, 0);
 }
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 1100px) {
 
     .containers_content{
         min-width: 200px;
@@ -364,3 +376,146 @@ section{
   
     /* Otros estilos específicos para pantallas más grandes */
   }
+
+
+  /* Nav Bar */
+  header{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav-principal {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background: #F6BC4E;    
+}
+
+.nav-principal ul { 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav-principal ul li {
+    list-style: none;
+}
+
+.nav-principal ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 15px;
+}
+
+.nav-principal ul li {
+    position: relative;
+    overflow: hidden;
+    transition: .2s;
+    padding: 15px;
+}
+
+
+.nav-principal ul li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    transition: left .6s;
+}
+
+.nav-principal ul li:hover::after{
+    left: 0;
+}
+
+
+.nav-principal .logo img {
+    height: 50px;
+    width: 170px;
+}
+
+.nav-principal .suscription {
+    padding: 15px 50px;
+}
+
+.nav-principal .openSidebar {
+    font-size: 30px;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+    position: absolute;
+    right:30px ;
+    top: 20px;
+    display: none;
+
+}
+
+.hidden{
+    left: -100%;
+}
+
+.show{
+    left: 0;
+}
+
+.nav-principal .openSidebar{
+    display: none;
+}
+
+
+.nav-principal .logo-mobile {
+    display: none;
+}
+
+@media (max-width: 939px) {
+    .nav-principal .logo img {
+        height: 50px;
+        width: 180px;
+    }
+
+    .nav-principal ul li a, .suscription {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 858px) {
+    .nav-principal .logo-mobile {
+        display: block;
+
+    }
+
+    .nav-principal .openSidebar{
+        display: block;
+    }
+
+    .nav-principal .logo-mobile img {
+        width: 180px;
+        height: 50px;
+        margin: 10px;
+    }
+
+    .nav-principal #sidebar {
+        position: fixed;
+        width: 100vw;
+        height: 35vh;
+        background: #000000;
+        top: 56px;  
+        transition: all .8s;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        padding: 0;
+    }
+
+
+    .nav-principal ul .logo img {
+        display: none;
+    } 
+}
