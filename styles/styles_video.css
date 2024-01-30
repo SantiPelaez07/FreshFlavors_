@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,800;1,600;1,700&display=swap');
+
+:root {
+    --black-color: #000000;
+    --white-color: #ffffff;
+    --gold-color: #F6BC4E;
+    --font-family: 'Poppins', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*=========FLAGS========= */
+body {
+    background-color: var(--white-color);
+    font-family: var(--font-family);
+    
+}
+
+.container-img {
+    display: flex;
+    justify-content: center;
+    width: 650px;
+    height: 430px;
+    padding: 20px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.381);
+}
+
+section :nth-child(1) {
+    border-radius: 10px 0 0 10px;
+}
+
+section :nth-child(5) {
+    border-radius: 0 10px 10px 0;
+}
+
+section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+section img:hover {
+    cursor: grab;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/*=========CARD=========*/
+.container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container .card {
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.472);
+}
+
+.card img{
+    border-radius: 10px 10px 0px 0px;
+}
+
+/*=========MODAL=========*/
+#modal-body{
+    text-align: justify;
+}
+
+.table-striped-columns td {
+    text-align: center;
+    vertical-align: middle; 
+    background-color: var(--gold-color);
+    font-weight: bold;  
+}
+
+/*=========BUTTON BACK=========*/
+#btn-back{
+    background-color: var(--black-color);
+    border: 1px solid var(--black-color);
+    margin: 10px 20px;
+    width: 90px;
+    transition: background-color 0.3s ease;
+}
+
+#btn-back:hover {
+    background-color: var(--gold-color);
+    border: 1px solid var(--gold-color);
+}
+
