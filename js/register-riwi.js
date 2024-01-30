@@ -1,3 +1,14 @@
+//
+// JavaScript para el desplazamiento suave al hacer clic en el enlace "Quienes somos"
+ document.querySelector('.option').addEventListener('click', function(e) {
+     e.preventDefault(); // Evitar que el enlace cambie la URL
+    document.getElementById('second-container').scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('third-container').scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('fourth-container').scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('contactanos').scrollIntoView({ behavior: 'smooth' });
+ });
+
+
 //Animaciones
 const sign_in_btn = document.querySelector("#sign-in-btn");
 const sign_up_btn = document.querySelector("#sign-up-btn");
