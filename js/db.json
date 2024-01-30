@@ -1,3 +1,22 @@
 {
-  "users": []
+  "users": [
+    {
+      "id": "6f4a",
+      "email": "zbastian.zapata@gmail.com",
+      "user": "DayronZapata",
+      "password": "Dayron12345*"
+    },
+    {
+      "id": "855d",
+      "email": "zxjsbjhasa@gmai.com",
+      "user": "ppasfkashkq",
+      "password": "Dayron12345*"
+    },
+    {
+      "id": "9e82",
+      "email": "zbastian.zapat<a@gmail.com",
+      "user": "smadadjskhjkdash jk",
+      "password": "Dayron12345*"
+    }
+  ]
 }
