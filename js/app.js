@@ -16,19 +16,31 @@ document.getElementById('form')
     emailjs.sendForm(serviceID, templateID, this)
         .then(() => {
       btn.value = 'Send Email';
-      alert('Email enviado correctamente!');
+      showAlert("Email enviado correctamente", "success", "Envío éxitoso")
     }, (err) => {
       btn.value = 'Send Email';
       alert(JSON.stringify(err));
     });
    } else {
-    alert("Pon algo")
+    showAlert("El campo está vacío")
    }
 
 
 });
 
 
+function showAlert(message, inconName = "error", title = "!Error") {
+  Swal.fire({
+      title: title,
+      text: message,
+      icon: inconName,
+      toast: "true",
+      timer: 2000,
+      showConfirmButton: false,
+      position: "bottom-right",
+      confirmButtonText: 'Aceptar'
+  })
+}
 
 
 

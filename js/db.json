@@ -1,33 +1,3 @@
 {
-  "users": [
-    {
-<<<<<<< Updated upstream
-      "id": "6f4a",
-=======
-      "id": "360b",
->>>>>>> Stashed changes
-      "email": "zbastian.zapata@gmail.com",
-      "user": "DayronZapata",
-      "password": "Dayron12345*"
-    },
-    {
-<<<<<<< Updated upstream
-      "id": "855d",
-      "email": "zxjsbjhasa@gmai.com",
-      "user": "ppasfkashkq",
-      "password": "Dayron12345*"
-    },
-    {
-      "id": "9e82",
-      "email": "zbastian.zapat<a@gmail.com",
-      "user": "smadadjskhjkdash jk",
-      "password": "Dayron12345*"
-=======
-      "id": "c9c8",
-      "email": "zbastian2.zapata@gmail.com",
-      "user": "DayronZapata2",
-      "password": "Dayron1245*"
->>>>>>> Stashed changes
-    }
-  ]
+  "users": []
 }

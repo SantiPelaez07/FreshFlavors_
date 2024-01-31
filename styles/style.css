@@ -486,6 +486,16 @@ section{
     display: none;
 }
 
+.send-email{
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.send-email:hover{
+    color: #000000;
+    border: 2px solid rgb(0, 0, 0);
+}
+
 @media (max-width: 939px) {
     .containers{
         height: auto;
