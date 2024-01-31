@@ -144,6 +144,7 @@ section{
 }
 
 .content button{
+    cursor: pointer;
     width: 35%;
     border-radius: 10px;
     color: var(--white-color);
@@ -192,6 +193,10 @@ section{
 .recommended-books button{
     width: 40%;
 }
+
+
+
+/* Footer design */
 
 
 .footer{

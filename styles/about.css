@@ -1,0 +1,87 @@
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,800;1,600;1,700&display=swap');
+
+/* Prueba */
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --black-color: #000000;
+    --white-color: #ffffff;
+    --gold-color:#F6BC4E;
+    --font-family: 'Poppins', sans-serif;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: var(--font-family);
+}
+
+/* Main */
+.sections{
+    height: 100vh;
+    padding: 20px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-white-color{
+    color: var(--white-color);
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+}
+
+.title-gold-color{
+    color: var(--gold-color);
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+}
+
+.black-section{
+    background: var(--black-color);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.gold-section{
+    background-color: var(--gold-color);
+}
+
+.black-paragraph{
+    color: var(--black-color);
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+    max-width: 800px;
+}
+
+.white-paragraph{
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+    max-width: 1200px;
+}
+
+.text_and_svg{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    gap: 90px
+}
+
+.svg{
+    width: 45%;
+}
