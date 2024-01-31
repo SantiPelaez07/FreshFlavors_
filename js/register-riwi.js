@@ -17,14 +17,18 @@ sign_in_btn.addEventListener("click",(e) => {
   container.classList.toggle("sign-up-mode");
 });
 
+
 sign_up_btn2.addEventListener("click",(e) => {
   e.preventDefault()
 container.classList.toggle("sign-up-mode2");
 });
 
+<<<<<<< Updated upstream
 
 
 
+=======
+>>>>>>> Stashed changes
 // sign_in_btn2.addEventListener("click",(e) => {
 //   e.preventDefault()
 // container.classList.toggle("sign-in-mode2");

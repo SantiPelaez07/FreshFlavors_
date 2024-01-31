@@ -85,7 +85,9 @@ section{
 }
 
 .label_ingredients{
-    color: var(--white-color);
+    font-weight: bold;
+    color: var(--gold-color);
+    font-size: 20px;
 }
 
 .create_recipe{
