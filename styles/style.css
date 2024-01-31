@@ -303,7 +303,7 @@ section{
 
     .containers_content img{
         min-width: 80%;
-        min-height: 80%;
+        min-height: 50%;
     }
 
     .content_titles,
@@ -487,6 +487,9 @@ section{
 }
 
 @media (max-width: 939px) {
+    .containers{
+        height: auto;
+    }
     .nav-principal .logo img {
         height: 50px;
         width: 180px;
