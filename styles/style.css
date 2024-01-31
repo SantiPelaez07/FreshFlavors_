@@ -386,11 +386,15 @@ section{
 
   /* Nav Bar */
   header{
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
+}
+
+.logo{
+    margin-top:6.5px ;
 }
 
 .nav-principal {
