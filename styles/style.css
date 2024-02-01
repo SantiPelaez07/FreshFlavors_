@@ -1,6 +1,10 @@
 /* Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,800;1,600;1,700&display=swap');
 
+/* Prueba */
+html {
+    scroll-behavior: smooth;
+}
 
 :root {
     --black-color: #000000;
@@ -33,7 +37,7 @@ body{
 
 /* Sección del primer container */
 .first-container {
-    height: 100%; /* Opcional: Para ocupar el 100% de la altura de la ventana */
+    height: 100vh; /* Opcional: Para ocupar el 100% de la altura de la ventana */
     background-image: linear-gradient(
         rgba(0,0,0,0.7),
         rgba(0,0,0,0.7)),
@@ -81,7 +85,9 @@ section{
 }
 
 .label_ingredients{
-    color: var(--white-color);
+    font-weight: bold;
+    color: var(--gold-color);
+    font-size: 20px;
 }
 
 .create_recipe{
@@ -102,7 +108,7 @@ section{
 
 
 .containers {
-    height: 75%; /* Opcional: Para ocupar el 100% de la altura de la ventana */
+    height: 100vh; /* Opcional: Para ocupar el 100% de la altura de la ventana */
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
@@ -120,7 +126,9 @@ section{
 }
 
 
-.containers_content img{
+.containers_content img,
+.containers_content video
+{
     min-width: 500px;
     min-height: 500px;
     width: 40%;
@@ -136,6 +144,7 @@ section{
 }
 
 .content button{
+    cursor: pointer;
     width: 35%;
     border-radius: 10px;
     color: var(--white-color);
@@ -184,6 +193,10 @@ section{
 .recommended-books button{
     width: 40%;
 }
+
+
+
+/* Footer design */
 
 
 .footer{
@@ -295,7 +308,7 @@ section{
 
     .containers_content img{
         min-width: 80%;
-        min-height: 80%;
+        min-height: 50%;
     }
 
     .content_titles,
@@ -387,6 +400,10 @@ section{
     padding: 20px;
 }
 
+.logo{
+    margin-top:6.5px ;
+}
+
 .nav-principal {
     position: fixed;
     width: 100%;
@@ -475,7 +492,20 @@ section{
     display: none;
 }
 
+.send-email{
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.send-email:hover{
+    color: #000000;
+    border: 2px solid rgb(0, 0, 0);
+}
+
 @media (max-width: 939px) {
+    .containers{
+        height: auto;
+    }
     .nav-principal .logo img {
         height: 50px;
         width: 180px;

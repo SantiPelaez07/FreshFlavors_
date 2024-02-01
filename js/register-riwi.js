@@ -1,3 +1,4 @@
+
 //Animaciones
 const sign_in_btn = document.querySelector("#sign-in-btn");
 const sign_up_btn = document.querySelector("#sign-up-btn");
@@ -16,14 +17,18 @@ sign_in_btn.addEventListener("click",(e) => {
   container.classList.toggle("sign-up-mode");
 });
 
+
 sign_up_btn2.addEventListener("click",(e) => {
   e.preventDefault()
 container.classList.toggle("sign-up-mode2");
 });
 
+
+
+
 sign_in_btn2.addEventListener("click",(e) => {
   e.preventDefault()
-container.classList.toggle("sign-in-mode2");
+container.classList.toggle("sign-up-mode2");
 });
 
 
@@ -238,3 +243,20 @@ async function login() {
     }
 
 }
+
+
+
+
+
+
+//Puede generar problemas
+
+//
+// JavaScript para el desplazamiento suave al hacer clic en el enlace "Quienes somos"
+document.querySelector('.option').addEventListener('click', function(e) {
+    e.preventDefault(); // Evitar que el enlace cambie la URL
+   document.getElementById('second-container').scrollIntoView({ behavior: 'smooth' });
+   document.getElementById('third-container').scrollIntoView({ behavior: 'smooth' });
+   document.getElementById('fourth-container').scrollIntoView({ behavior: 'smooth' });
+   document.getElementById('contactanos').scrollIntoView({ behavior: 'smooth' });
+});
