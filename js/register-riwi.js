@@ -147,7 +147,7 @@ function validatePasswordSegurity(){
         return {validated: true}
     }
 
-    return {validated: false, message: "La contraseña debe tener mayusculas, minusculas, un caracater especial y un rango de 8 a 15 caracateres"}
+    return {validated: false, message: "La contraseña debe tener mayúsculas, minúsculas, un caracater especial y un rango de 8 a 15 caracateres"}
 };
 
 
@@ -223,15 +223,16 @@ async function login() {
     console.log(data)
     if (!data.length) {
         showAlert("El usuario no existe")
-
+        
         return
     }
-
+    
     //3. Comparar las contraseñas
     if (data[0].password === password1.value) {
         //Con el objeto window podemos redireccionar al usuario
-        window.location.href = "index.html";
+        window.location.href = "login_users.html";
         localStorage.setItem("isAuthorizated", "true")
+        getUser(data)
     } else {
         console.log("Credenciales incorrectas")
     }

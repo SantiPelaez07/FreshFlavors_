@@ -1,4 +1,22 @@
 {
   "users": [
+    {
+      "id": "4f1c",
+      "email": "santipelaez0@gmail.com",
+      "user": "Santi",
+      "password": "Dayron12345*"
+    },
+    {
+      "id": "088f",
+      "email": "santipaelaez0@gmail.com",
+      "user": "Santiaaa",
+      "password": "Dayron1234*"
+    },
+    {
+      "id": "18a1",
+      "email": "santipaelaeaaaaz0@gmail.com",
+      "user": "Santiaaaaaa",
+      "password": "Dayron1234??"
+    }
   ]
 }

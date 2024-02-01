@@ -380,7 +380,7 @@ section{
 
   /* Nav Bar */
   header{
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -415,7 +415,7 @@ section{
     position: relative;
     overflow: hidden;
     transition: .2s;
-    padding: 15px;
+    padding: 8px;
 }
 
 
@@ -438,6 +438,7 @@ section{
 .nav-principal .logo img {
     height: 50px;
     width: 170px;
+    margin: 5px 0;
 }
 
 .nav-principal .suscription {
@@ -488,11 +489,12 @@ section{
 @media (max-width: 858px) {
     .nav-principal .logo-mobile {
         display: block;
-
+        margin: 5px;
     }
 
     .nav-principal .openSidebar{
         display: block;
+        margin: 5px;
     }
 
     .nav-principal .logo-mobile img {
