@@ -28,7 +28,8 @@ async function getUser(data) {
     method: "GET"
   });
   const data1 = await response.json();
-  for (let i = 0; i <= data1.length; i++) {
+  let i = 0
+  for (i; i <= data1.length; i++) {
 
     if (data1[i] == data) {
       title.innerHTML = ""

@@ -169,11 +169,11 @@ html {
     text-transform: uppercase;
 }
 
-input {
+#c1,#c2,#c3,#c4 {
     display: none;
 }
 
-input:checked + label {
+input:checked + label  {
     width: 600px;
 }
 

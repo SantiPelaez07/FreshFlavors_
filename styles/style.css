@@ -406,16 +406,16 @@ section{
 
 .nav-principal {
     position: fixed;
+    top: 0;
     width: 100%;
     height: 70px;
-    background: #F6BC4E;    
+    background: #F6BC4E;   
 }
 
 .nav-principal ul { 
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 10px;
 }
 
 .nav-principal ul li {
@@ -425,7 +425,7 @@ section{
 .nav-principal ul li a{
     text-decoration: none;
     color: #fff;
-    padding: 15px;
+    padding: 5px;
 }
 
 .nav-principal ul li {
@@ -433,6 +433,8 @@ section{
     overflow: hidden;
     transition: .2s;
     padding: 8px;
+    align-items: center;
+    top: 0%;
 }
 
 

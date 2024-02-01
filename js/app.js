@@ -1,8 +1,7 @@
 const btn = document.getElementById('button');
 const input = document.getElementById("email_id")
 
-document.getElementById('form')
- .addEventListener('submit', function(event) {
+document.getElementById('form').addEventListener('submit', function(event) {
    event.preventDefault();
 
    btn.value = 'Sending...';
@@ -52,5 +51,5 @@ const sidebar = document.querySelector("#sidebar")
 
 btnopenSidebar.addEventListener("click" , (e) => {
 e.preventDefault()
-sidebar.classList.toggle("show")
+sidebar.classList.toggle("show")  
 })  
