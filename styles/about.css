@@ -36,6 +36,8 @@ html {
     font-weight: bold;
     font-size: 60px;
     text-align: center;
+    font-size: clamp(1.875rem, 1.1538rem + 2.3077vw, 3.75rem);
+
 }
 
 .title-gold-color{
@@ -43,6 +45,7 @@ html {
     font-weight: bold;
     font-size: 60px;
     text-align: center;
+    font-size: clamp(1.875rem, 1.1538rem + 2.3077vw, 3.75rem);
 }
 
 .black-section{
@@ -50,7 +53,6 @@ html {
     display: flex;
     flex-direction: column;
     gap: 40px;
-
 }
 
 .gold-section{
@@ -64,6 +66,7 @@ html {
     font-size: 30px;
     text-align: center;
     max-width: 800px;
+    font-size: clamp(1rem, 0.6635rem + 1.0769vw, 1.875rem);
 }
 
 .white-paragraph{
@@ -73,6 +76,7 @@ html {
     font-size: 30px;
     text-align: center;
     max-width: 1200px;
+    font-size: clamp(1rem, 0.6635rem + 1.0769vw, 1.875rem);
 }
 
 .text_and_svg{
@@ -87,20 +91,9 @@ html {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /* Cards */
 .wrapper {
     width: 100%;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -158,12 +151,14 @@ html {
 }
 
 .description p {
-    color: #b0b0ba;
+    color: #000000;
     padding-top: 5px;
 }
 
 .description h4 {
     text-transform: uppercase;
+    color: var(--black-color);
+    font-size: 18px;
 }
 
 #c1,#c2,#c3,#c4 {
@@ -180,14 +175,18 @@ input:checked + label .description {
 }
 
 .card[for="c1"] {
-    background-image: url("../imagenes/QuienesSomos.webp");
+    background-image: url("../imagenes/imagenes-about-us/food\ salinas\ 2\ blanco.png");
 }
 .card[for="c2"] {
-    background-image: url('../imagenes/QuienesSomos.webp');
+    background-image: url('../imagenes/imagenes-about-us/Verde\ bendito.png');
 }
 .card[for="c3"] {
-    background-image: url('../imagenes/QuienesSomos.webp');
+    background-image: url('../imagenes/imagenes-about-us/bon.png');
 }
 .card[for="c4"] {
-    background-image: url('../imagenes/QuienesSomos.webp');
+    background-image: url('../imagenes/imagenes-about-us/Matasa\ \(2\).png');
+}
+
+.row{
+    margin-left: 20px;
 }
