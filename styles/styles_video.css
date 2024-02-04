@@ -11,15 +11,23 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 /*=========FLAGS========= */
 body {
-    background-color: var(--black-color);
+    background-color: var(--white-color);
     font-family: var(--font-family);
+    overflow-x: hidden;
 
 }
 
+
+.gold-section,
+.main
+{
+background-color: #000000;
+}
 .container-img {
     display: flex;
     justify-content: center;

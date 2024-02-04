@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/styles_video.css">
-    <link rel="stylesheet" href="styles/footer.css">
+
+        <link rel="stylesheet" href="styles/styles_video.css">
+        <link rel="stylesheet" href="styles/footer.css">
+
 
     <!--Iconos de boostrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -16,6 +18,8 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Email js -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    
     <title>FreshFlavors</title>
 </head>
 
@@ -29,10 +33,10 @@
 
             <ul id="sidebar" class="hidden">
                 <li><a href="#" class="option">Inicio</a></li>
-                <li><a href="#second-container" class="option">Quienes somos</a></li>
-                <li><a href="#third-container" class="option">Recetas</a></li>
+                <li><a href="http://127.0.0.1:5501/index.html#second-container" class="option">Quienes somos</a></li>
+                <li><a href="http://127.0.0.1:5501/index.html#third-container" class="option">Recetas</a></li>
                 <a href="#" class="logo"><img src="./imagenes/FreshFlavors.webp" alt=""></a></li>
-                <li><a href="#fourth-container" class="option">Videos</a></li>
+                <li><a href="http://127.0.0.1:5501/index.html#fourth-container" class="option">Videos</a></li>
                 <li><a href="#contactanos" class="option">Contáctanos</a></li>
                 <li><a href="login_register.html" class="suscription">Ingresa</a></li>
             </ul>
@@ -90,38 +94,43 @@
     <button id="btn-back" class="btn btn-warning  visually-hidden">Atras</button>
 
     <!--FOOTER-->
-    <footer class="footer" id="contactanos">
+   <footer class="footer">
 
-        <img src="./imagenes/Shape_footer.webp" alt="" srcset="">
 
-        <div class="container-form">
-            <h3>No te pierdas de nada!</h3>
-            <form class="form" action="" id="form">
 
-                <input type="text" name="email_id" id="email_id" placeholder="Ingresa tu email">
-                <button class="send-email" type="submit" id="button" value="Send Email">Suscríbete</button>
-            </form>
-        </div>
+        <footer class="footer" id="contactanos">
 
-        <div class="sections_footer">
-            <div class="information_footer">
-                <ul>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Descubrir</a></li>
-                    <li><a href="#">Explorar</a></li>
-                    <li><a href="#">Videos</a></li>
-                </ul>
+            <img src="./imagenes/Shape_footer.webp" alt="" srcset="">
+
+            <div class="container-form">
+                <h3>No te pierdas de nada!</h3>
+                <form class="form" action="" id="form">
+
+                    <input type="text" name="email_id" id="email_id" placeholder="Ingresa tu email">
+                    <button class="send-email" type="submit" id="button" value="Send Email">Suscríbete</button>
+                    <!-- <label for="email_id">email_id</label>
+            <input type="text" name="email_id" id="email_id"> -->
+                </form>
             </div>
-            <div class="social-media">
-                <a href="https://www.youtube.com/watch?v=qE4RDg0TUrc" target="_blank"><i
-                        class="bi bi-instagram"></i></a>
-                <a href="#" target="_blank"><i class="bi bi-twitter-x"></i></a>
-                <a href="#" target="_blank"><i class="bi bi-facebook"></i></a>
-                <a href="#" target="_blank"><i class="bi bi-whatsapp"></i></a>
-            </div>
-        </div>
-    </footer>
 
+            <div class="sections_footer">
+                <div class="information_footer">
+                    <ul>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Descubrir</a></li>
+                        <li><a href="#">Explorar</a></li>
+                        <li><a href="#">Videos</a></li>
+                    </ul>
+                </div>
+                <div class="social-media">
+                    <a href="https://www.youtube.com/watch?v=qE4RDg0TUrc" target="_blank"><i
+                            class="bi bi-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" target="_blank"><i class="bi bi-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                </div>
+            </div>
+        </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
