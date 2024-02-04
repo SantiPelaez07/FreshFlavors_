@@ -1,8 +1,7 @@
 const btn = document.getElementById('button');
 const input = document.getElementById("email_id")
 
-document.getElementById('form')
- .addEventListener('submit', function(event) {
+document.getElementById('form').addEventListener('submit', function(event) {
    event.preventDefault();
 
    btn.value = 'Sending...';
@@ -16,19 +15,31 @@ document.getElementById('form')
     emailjs.sendForm(serviceID, templateID, this)
         .then(() => {
       btn.value = 'Send Email';
-      alert('Email enviado correctamente!');
+      showAlert("Email enviado correctamente", "success", "Envío éxitoso")
     }, (err) => {
       btn.value = 'Send Email';
       alert(JSON.stringify(err));
     });
    } else {
-    alert("Pon algo")
+    showAlert("El campo está vacío")
    }
 
 
 });
 
 
+function showAlert(message, inconName = "error", title = "!Error") {
+  Swal.fire({
+      title: title,
+      text: message,
+      icon: inconName,
+      toast: "true",
+      timer: 2000,
+      showConfirmButton: false,
+      position: "bottom-right",
+      confirmButtonText: 'Aceptar'
+  })
+}
 
 
 
@@ -40,5 +51,5 @@ const sidebar = document.querySelector("#sidebar")
 
 btnopenSidebar.addEventListener("click" , (e) => {
 e.preventDefault()
-sidebar.classList.toggle("show")
+sidebar.classList.toggle("show")  
 })  

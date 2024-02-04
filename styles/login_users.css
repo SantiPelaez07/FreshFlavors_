@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+video {
+    width: 100%;
+    position: fixed;
+    object-fit: cover;
+    opacity: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7));
+    z-index: -100;
+}
+
+.bienvenida {
+    padding: 0;
+    top: 55px;
+    width: 100%;
+    height: 100%;
+}
+
+
+.bienvenida .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+    color: #fff;
+}

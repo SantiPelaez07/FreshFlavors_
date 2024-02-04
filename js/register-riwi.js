@@ -1,3 +1,4 @@
+
 //Animaciones
 const sign_in_btn = document.querySelector("#sign-in-btn");
 const sign_up_btn = document.querySelector("#sign-up-btn");
@@ -16,14 +17,18 @@ sign_in_btn.addEventListener("click",(e) => {
   container.classList.toggle("sign-up-mode");
 });
 
+
 sign_up_btn2.addEventListener("click",(e) => {
   e.preventDefault()
 container.classList.toggle("sign-up-mode2");
 });
 
+
+
+
 sign_in_btn2.addEventListener("click",(e) => {
   e.preventDefault()
-container.classList.toggle("sign-in-mode2");
+container.classList.toggle("sign-up-mode2");
 });
 
 
@@ -147,7 +152,7 @@ function validatePasswordSegurity(){
         return {validated: true}
     }
 
-    return {validated: false, message: "La contraseña debe tener mayusculas, minusculas, un caracater especial y un rango de 8 a 15 caracateres"}
+    return {validated: false, message: "La contraseña debe tener mayúsculas, minúsculas, un caracater especial y un rango de 8 a 15 caracateres"}
 };
 
 
@@ -223,17 +228,35 @@ async function login() {
     console.log(data)
     if (!data.length) {
         showAlert("El usuario no existe")
-
+        
         return
     }
-
+    
     //3. Comparar las contraseñas
     if (data[0].password === password1.value) {
         //Con el objeto window podemos redireccionar al usuario
-        window.location.href = "index.html";
+        window.location.href = "login_users.html";
         localStorage.setItem("isAuthorizated", "true")
+        getUser(data)
     } else {
         console.log("Credenciales incorrectas")
     }
 
 }
+
+
+
+
+
+
+//Puede generar problemas
+
+//
+// JavaScript para el desplazamiento suave al hacer clic en el enlace "Quienes somos"
+document.querySelector('.option').addEventListener('click', function(e) {
+    e.preventDefault(); // Evitar que el enlace cambie la URL
+   document.getElementById('second-container').scrollIntoView({ behavior: 'smooth' });
+   document.getElementById('third-container').scrollIntoView({ behavior: 'smooth' });
+   document.getElementById('fourth-container').scrollIntoView({ behavior: 'smooth' });
+   document.getElementById('contactanos').scrollIntoView({ behavior: 'smooth' });
+});
