@@ -7,6 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles_video.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
     <!--Iconos de boostrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="shortcut icon" href="imagenes/Icono.webp" type="image/x-icon">
@@ -27,10 +29,11 @@
 
             <ul id="sidebar" class="hidden">
                 <li><a href="#" class="option">Inicio</a></li>
-                <li><a href="#" class="option">Quienes somos</a></li>
-                <li><a href="#" class="option">Recetas</a></li>
+                <li><a href="#second-container" class="option">Quienes somos</a></li>
+                <li><a href="#third-container" class="option">Recetas</a></li>
                 <a href="#" class="logo"><img src="./imagenes/FreshFlavors.webp" alt=""></a></li>
-                <li><a href="#" class="option">Contáctanos</a></li>
+                <li><a href="#fourth-container" class="option">Videos</a></li>
+                <li><a href="#contactanos" class="option">Contáctanos</a></li>
                 <li><a href="login_register.html" class="suscription">Ingresa</a></li>
             </ul>
         </div>
@@ -57,11 +60,9 @@
     </div>
 
     <!--IMAGES-->
-    <div class="message">
-        <p>
-            ¡Bienvenido/a! En este espacio, podrás explorar las mejores recetas de diferentes países. Además, contamos
-            con una sección especial de recetas exclusivas inspiradas en películas y videojuegos. ¡Anímate a descubrir
-            sabores únicos y a disfrutar de nuevas experiencias culinarias! </p>
+    <div class="sections gold-section">
+        <h2 class="title-white-color">¡Explora las mejores recetas de diferentes países!</h2>
+
     </div>
 
     <main class="main">
@@ -86,10 +87,11 @@
 
     </div>
 
-    <button id="btn-back" class="btn btn-dark visually-hidden">Atras</button>
+    <button id="btn-back" class="btn btn-warning  visually-hidden">Atras</button>
 
     <!--FOOTER-->
-    <footer class="footer">
+    <footer class="footer" id="contactanos">
+
         <img src="./imagenes/Shape_footer.webp" alt="" srcset="">
 
         <div class="container-form">
@@ -97,11 +99,10 @@
             <form class="form" action="" id="form">
 
                 <input type="text" name="email_id" id="email_id" placeholder="Ingresa tu email">
-                <button type="submit" id="button" value="Send Email">Suscríbete</button>
-                <!-- <label for="email_id">email_id</label>
-            <input type="text" name="email_id" id="email_id"> -->
+                <button class="send-email" type="submit" id="button" value="Send Email">Suscríbete</button>
             </form>
         </div>
+
         <div class="sections_footer">
             <div class="information_footer">
                 <ul>

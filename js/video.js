@@ -19,7 +19,7 @@ window.addEventListener(`DOMContentLoaded`, async () => {
 
 container.addEventListener("click", (event) => {
 
-  const btnDetalles = event.target.classList.contains("editar")
+  const btnDetalles = event.target.classList.contains("detalles")
 
   if (btnDetalles === true) {
     const id = event.target.getAttribute("data-id")
@@ -49,7 +49,7 @@ function cardInformation() {
       <div class="card-body">
         <h5 class="card-title">${contry.title}</h5>
         <p class="card-text">${contry.description}</p>
-        <button type="button" class="btn btn-dark editar"  data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-id="${id}">
+        <button type="button" class="btn btn-warning detalles"  data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-id="${id}">
              Detalles
         </button>
       </div>
