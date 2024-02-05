@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CodingDung | Profile Template</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/profile-section.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+<body>
+    
+
+    <header>
+        <div class="nav-principal">
+            <a href="#" class="logo-mobile"><img src="./imagenes/FreshFlavors.webp" alt=""></a>
+
+            <button class="openSidebar"> <i class='bx bx-menu'></i></button>
+
+            <ul id="sidebar" class="hidden">
+                <li><a href="http://127.0.0.1:5501/index.html#" class="option">Inicio</a></li>
+                <li><a href="http://127.0.0.1:5501/index.html#second-container" class="option">Quienes somos</a></li>
+                <li><a href="http://127.0.0.1:5501/index.html#third-container" class="option">Recetas</a></li>
+                <a href="#" class="logo"><img src="./imagenes/FreshFlavors.webp" alt=""></a></li>
+                <li><a href="http://127.0.0.1:5501/index.html#fourth-container" class="option">Videos</a></li>
+                <li><a href="#contactanos" class="option">Contáctanos</a></li>
+                <li><a href="login_register.html" class="suscription">Ingresa</a></li>
+            </ul>
+        </div>
+    </header>
+
+        <div class="container light-style flex-grow-1 container-p-y">
+            <h4 class="font-weight-bold py-3 mb-4">
+                Configuraciones de cuenta
+            </h4>
+            <div class="card overflow-hidden">
+                <div class="row no-gutters row-bordered row-border-light">
+                    <div class="col-md-3 pt-0">
+                        <div class="list-group list-group-flush account-settings-links">
+                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-general">General</a>
+                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-change-password">Cambiar contraseña</a>
+                            <a class="list-group-item list-group-item-action active" data-toggle="list" href="#account-info">Información</a>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="tab-content">
+                            <div class="tab-pane fade" id="account-general">
+                                <div class="card-body media align-items-center">
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="d-block ui-w-80">
+                                    <div class="media-body ml-4">
+                                        <label class="btn btn-outline-primary">
+                                            Actualizar foto
+                                            <input type="file" class="account-settings-fileinput">
+                                        </label> &nbsp;
+                                        <button type="button" class="btn btn-default md-btn-flat">Eliminar</button>
+                                        <div class="text-light small mt-1" style="color: black !important;">Subir en formato JPG, GIF or PNG.</div>
+                                    </div>
+                                </div>
+                                <hr class="border-light m-0">
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label class="form-label">Usuario</label>
+                                        <input type="text" class="form-control mb-1" value="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">E-mail</label>
+                                        <input type="text" class="form-control mb-1" value="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Sexo</label>
+                                        <select class="custom-select">
+                                            <option>Hombre</option>
+                                            <option>Mujer</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="account-change-password">
+                                <div class="card-body pb-2">
+                                    <div class="form-group">
+                                        <label class="form-label">Contraseña Actual</label>
+                                        <input type="password" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Nueva contraseña</label>
+                                        <input type="password" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Confirma tu nueva contraseña</label>
+                                        <input type="password" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade active show" id="account-info">
+                                <div class="card-body pb-2">
+                                    <div class="form-group">
+                                        <label class="form-label">Biografía</label>
+                                        <textarea class="form-control" rows="5"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Cumpleaños</label>
+                                        <input type="text" class="form-control" value="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">País</label>
+                                        <select class="custom-select">
+                                            <option>Colombia</option>
+                                            <option selected="">Perú</option>
+                                            <option>Venezuela</option>
+                                            <option>Estados unidos</option>
+                                            <option>México</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <hr class="border-light m-0">
+                                <div class="card-body pb-2">
+                                    <h6 class="mb-4">Contactos</h6>
+                                    <div class="form-group">
+                                        <label class="form-label">Teléfono</label>
+                                        <input type="text" class="form-control" value="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-right mt-3">
+                <button type="button" class="btn btn-primary">Save changes</button>&nbsp;
+                <button type="button" class="btn btn-default">Cancel</button>
+            </div>
+        </div>
+
+        <footer class="footer" id="contactanos">
+
+            <img src="./imagenes/Shape_footer.webp" alt="" srcset="">
+
+            <div class="container-form">
+                <h3>No te pierdas de nada!</h3>
+                <form class="form" action="" id="form">
+
+                    <input type="text" name="email_id" id="email_id" placeholder="Ingresa tu email">
+                    <button class="send-email" type="submit" id="button" value="Send Email">Suscríbete</button>
+                    <!-- <label for="email_id">email_id</label>
+            <input type="text" name="email_id" id="email_id"> -->
+                </form>
+            </div>
+
+            <div class="sections_footer">
+                <div class="information_footer">
+                    <ul>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Descubrir</a></li>
+                        <li><a href="#">Explorar</a></li>
+                        <li><a href="#">Videos</a></li>
+                    </ul>
+                </div>
+                <div class="social-media">
+                    <a href="https://www.youtube.com/watch?v=qE4RDg0TUrc" target="_blank"><i
+                            class="bi bi-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" target="_blank"><i class="bi bi-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                </div>
+            </div>
+        </footer>
+        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript">
+    
+        </script>
+    
+    
+</body>
+</html>
