@@ -274,3 +274,29 @@ header {
         display: none;
     }
 }
+
+
+/* Modficaciones */
+.information_footer ul li a{
+    text-decoration: none;
+}
+
+#email_id,
+#button
+{
+    font-size: 13.3px;
+}
+
+/* .container-form{
+    font-size: clamp(1rem, -0.0938rem + 3.5vw, 1.875rem);
+} */
+.container-form h3{
+    color: #000000;
+    font-size: 35.1px;
+    font-weight: 700;
+    font-size: clamp(1rem, -0.0938rem + 3.5vw, 1.875rem);
+}
+.information_footer ul{
+    padding-left: 0px;
+}
+
