@@ -52,6 +52,13 @@ body{
     justify-content: center;
 }
 
+.main-title {
+    color: #fff;
+    margin: 10px 10px 30px;
+    font-size: 30px;
+    text-align: center;
+}
+
 section{
     padding: 200px 10%
 }
@@ -62,7 +69,7 @@ section{
     max-width: 900px;
 }
 
-.main-title{
+.title{
     color: var(--white-color);
     font-size: clamp(1rem, -0.8rem + 8vw, 3rem);
     text-align: center;
@@ -88,6 +95,7 @@ section{
     font-weight: bold;
     color: var(--gold-color);
     font-size: 20px;
+    margin-top: 40px;
 }
 
 .create_recipe{
@@ -482,7 +490,7 @@ section{
 }
 
 .show{
-    left: 0;
+    left: -10%;
 }
 
 .nav-principal .openSidebar{
@@ -537,10 +545,10 @@ section{
 
     .nav-principal #sidebar {
         position: fixed;
-        width: 100vw;
-        height: 35vh;
+        width: 100%;
+        height: 100vh;
         background: #000000;
-        top: 56px;  
+        top: 69px;  
         transition: all .8s;
         display: flex;
         flex-direction: column;

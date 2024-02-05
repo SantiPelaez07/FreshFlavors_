@@ -188,7 +188,7 @@ async function validateEmail(){
 
 
 //Esto se toma la librería de showAlert, lo unico que modificamos es la parte de del text, y le asignamos lo que nos llegue por message
-function showAlert(message) {
+function    showAlert(message) {
     Swal.fire({
         title: 'Error!',
         text: message,
@@ -225,26 +225,37 @@ async function login() {
     const response = await fetch(`${URL}?user=${user1.value}`)
     const data = await response.json()
     //2. Esta registrado ese usuario
-    console.log(data)
+    
     if (!data.length) {
         showAlert("El usuario no existe")
-        
         return
     }
     
     //3. Comparar las contraseñas
     if (data[0].password === password1.value) {
+        console.log("Correcto");
         //Con el objeto window podemos redireccionar al usuario
         window.location.href = "login_users.html";
-        localStorage.setItem("isAuthorizated", "true")
-        getUser(data)
+        localStorage.setItem("datas", JSON.stringify(data))
     } else {
         console.log("Credenciales incorrectas")
+        showAlert("¡La contraseña ingresada no es válida!")
     }
-
 }
 
+//sghjk
 
+// data.forEach(element => {
+//     //3. Comparar las contraseñas
+//     if (data[0].password === password1.value) {
+//         //Con el objeto window podemos redireccionar al usuario
+//         window.location.href = "login_users.html";
+//         localStorage.setItem("data", data)
+//     } else {
+//         console.log("Credenciales incorrectas")
+//     }
+// })
+// }
 
 
 

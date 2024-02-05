@@ -52,4 +52,9 @@ const sidebar = document.querySelector("#sidebar")
 btnopenSidebar.addEventListener("click" , (e) => {
 e.preventDefault()
 sidebar.classList.toggle("show")  
-})  
+})
+
+// document.addEventListener("click", (event) => {
+//   event.preventDefault();
+//   event.target.conta
+// })

@@ -7,6 +7,7 @@
 video {
     width: 100%;
     position: fixed;
+    background: url(../imagenes/pexels_videos_1341925\ \(720p\).mp4);
     object-fit: cover;
     opacity: linear-gradient(
         rgba(0,0,0,0.7),
@@ -28,4 +29,235 @@ video {
     align-items: center;
     margin-top: 250px;
     color: #fff;
+    font-size: 30px;
+}
+
+#perfil {
+    width: 120px;
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+}
+option {
+    border: none;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Sección del primer container */
+.first-container1 {
+    height: 100vh; /* Opcional: Para ocupar el 100% de la altura de la ventana */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir completamente el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    /* Otros estilos... */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    padding: 200px 10%
+}
+.main-content{
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px;
+}
+
+.main-title{
+    color: var(--white-color);
+    font-size: clamp(1rem, -0.8rem + 8vw, 3rem);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input_ingredients{
+    min-width: max-content;
+    margin-top: 15px;
+    width: 40%;
+    height: 40px;
+    border-radius: 30px;
+    box-shadow: 5px 4px 10px rgb(122, 122, 122);
+    outline: none;
+    border: none;
+    padding: 0px 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.label_ingredients{
+    font-weight: bold;
+    color: var(--gold-color);
+    font-size: 20px;
+}
+
+.create_recipe{
+    margin-top: 20px;
+    border-radius: 15px;
+    color: var(--white-color);
+    background-color: var(--black-color);
+    font-size: 20px;
+    width: 130px;
+    height: 70px;
+    outline: none;
+    cursor: pointer;
+}
+
+
+
+/* Sección del Segundo container*/
+
+
+.containers {
+    height: 100vh; /* Opcional: Para ocupar el 100% de la altura de la ventana */
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.containers_content{
+    width: 100%;
+    display: flex;
+    gap: 150px;
+    max-height: 80%;
+    align-items: center;
+}
+
+
+.containers_content img,
+.containers_content video
+{
+    min-width: 500px;
+    min-height: 500px;
+    width: 40%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content button{
+    cursor: pointer;
+    width: 35%;
+    border-radius: 10px;
+    color: var(--white-color);
+    background-color: var(--black-color);
+    margin-top: 10px;
+    height: 50px;
+    font-size: 18px;
+    margin-top: 25px;
+    padding: 5px;
+    transition: 0.5s;
+    border: none;
+}
+
+.content button:hover{
+    background: #f8b435;
+    color: #000000;
+    font-weight: bold;
+    border: 1px solid #000000;
+}
+
+.content_titles{
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.content_paragraphs{
+    font-size: 21px;
+    min-width: 350px;
+}
+
+
+/* Cambios para el tercer container */
+.third-container{
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+.third-container button{
+    background-color: var(--white-color);
+    color: var(--black-color);
+    font-size: 18px;
+}
+
+/* Cambios para el cuarto container */
+.recommended-books button{
+    width: 40%;
+}
+
+
+/* SubList */
+
+.desplegable {
+    list-style: none;
+}
+
+.dropDown-link {
+    padding: 1em .7em;
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    position: relative;
+    background-color: var(--bg, transparent);
+}
+
+.dropDown-link:has( :checked ){
+     --rows: 1fr;
+     --rotate: rotate(180deg);
+     --bg: #283038;
+}
+
+.checkDrop {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.dropDown-content {
+    display: grid;
+    grid-template-rows: var(--rows, 0fr);
+    transition: .3s grid-template-rows;
+}
+
+.subLista {
+    position: absolute;
+    background-color: #000000;
+    width: 75%;
+    max-width: 300px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.dropDownOptions {
+    width: 85%;
+    list-style: none;
+    margin-left: auto;
+}
+
+.optionsLink {
+    padding: 1em 0;
+    display: block;
+    text-decoration: none;
+}
+
+.imgDropdown {
+    margin-left: auto;
+    transform: var(--rotate, 0);
+    transition: .2s transform;
 }
