@@ -32,7 +32,7 @@ body{
     position: absolute;
     right: 0;
     top: 0;
-    background: url(../imagenes/Kiwi.png);
+    background: url(../imagenes/Kiwi.png) no-repeat;
     background-position: -50px ;
 }
 
