@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const localUser = localStorage.getItem("datas")
   const listLocal = JSON.parse(localUser)
 
+  getUser()
   const list = {
     id: listLocal.id,
     email: localUser.email,
@@ -24,7 +25,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
   console.log(`Contraseña: ${list.email}`)
   // listLocal = JSON.parse(localUser)
   // console.log(listLocal);
-  getUser()
   // selectPerfil();
   
 // exit.addEventListener("click", (event) => {
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     function getUser() {
       title.innerHTML = ""
-      title.innerHTML = `¡Bienvenido ${localUser}, estamos ansiosos de verte usando nuestros servicios!`
+      title.innerHTML = `¡Bienvenido ${localUser.user}, estamos ansiosos de verte usando nuestros servicios!`
     }
   })
 

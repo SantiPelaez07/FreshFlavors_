@@ -10,7 +10,7 @@ const sign_up_btn2 = document.querySelector("#sign-up-btn2");
 sign_up_btn.addEventListener("click",(e) => {
   e.preventDefault()
   container.classList.toggle("sign-up-mode");
-});
+}); 
 
 sign_in_btn.addEventListener("click",(e) => {
   e.preventDefault()
