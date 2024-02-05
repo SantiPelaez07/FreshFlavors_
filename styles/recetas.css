@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        * {
+            font-family: 'Poppins', sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+
+        img {
+            height: 280px;
+        }
+
+         body {
+            background: hsl(0, 0, 94%);
+        } 
+/* body{
+    background: #f6bc4e;
+} */
+
+
+.card{
+    display: flex;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.50);
+    position: relative;
+    text-align: center;
+    justify-content:center;
+    img{
+        border-radius: 15px  15px 0 0;
+        filter: brightness(50%);
+    }
+    .card-title{
+        
+        position: absolute;
+        top:40% ;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        h4{
+            color: white;
+            align-items: center;
+            justify-content: center;
+            
+        }
+    }
+}
+.owl-carousel{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 420px;
+    
+}
+.item{
+    padding: 10px;
+}
+.main-content{
+    display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 100%;
+     top: -100px;
+ }
+
+.container-fluid{
+    margin-top: 150px;
+}
+
+ .input_ingredients{
+    min-width: max-content;
+    margin-top: 15px;
+    width: 40%;
+    height: 40px;
+    border-radius: 30px;
+    box-shadow: 5px 4px 10px rgb(122, 122, 122);
+    outline: none;
+    border: none;
+    padding: 0px 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.label_ingredients{
+    font-weight: bold;
+    color: var(--gold-color);
+    font-size: 20px;
+}
+
+.create_recipe{
+    margin-top: 20px;
+    border-radius: 15px;
+    background: blue;
+    font-size: 20px;
+    width: 130px;
+    height: 40px;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    transition: .9s;
+    border-radius: 40px;
+}
+
+.create_recipe:hover {
+    background: rgb(240, 177, 60);
+    color: black;
+    border: none;
+}
+
+
+/* .recetas{
+    display: flex;
+    flex-wrap: wrap;
+   
+} */
+
+.owl-nav{
+    display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    button{
+        height: 50px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+       
+        
+       span{
+           font-size: 60px !important;
+           display: flex !important;
+           align-items: center !important;
+           justify-content: center !important;
+       }
+    }
+
+    button:hover{
+       background: blue !important;
+        
+    }
+}
+.btn{
+    margin-top: 20px;
+    border-radius: 15px;
+    background: blue;
+    font-size: 20px;
+    width: 140px;
+    height: 40px;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    transition: .5s;
+    border-radius: 40px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.btn:hover{
+    background: rgb(240, 177, 60);
+    color: black;
+    border: none;
+    transition: .9s; 
+}
+
