@@ -4,13 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/styles_video.css">
+
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/styles_video.css">
-    <title>Document</title>
+
+
+
+
+    <!--Iconos de boostrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="imagenes/Icono.webp" type="image/x-icon">
+    <!-- Iconos de BoxIcons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Email js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">emailjs.init('8hu8xArStHs7JKQ6S')</script>
+
+    <title>FreshFlavors</title>
 </head>
 
 <body>
+    <!--HEDER-->
+    <header>
+        <div class="nav-principal">
+            <a href="#" class="logo-mobile"><img src="./imagenes/FreshFlavors.webp" alt=""></a>
+
+            <button class="openSidebar"> <i class='bx bx-menu'></i></button>
+
+            <ul id="sidebar" class="hidden">
+                <li><a href="http://127.0.0.1:5501/index.html#" class="option">Inicio</a></li>
+                <li><a href="http://127.0.0.1:5501/index.html#second-container" class="option">Quienes somos</a></li>
+                <li><a href="http://127.0.0.1:5501/index.html#third-container" class="option">Recetas</a></li>
+                <a href="#" class="logo"><img src="./imagenes/FreshFlavors.webp" alt=""></a></li>
+                <li><a href="http://127.0.0.1:5501/index.html#fourth-container" class="option">Videos</a></li>
+                <li><a href="#contactanos" class="option">Contáctanos</a></li>
+                <li><a href="login_register.html" class="suscription">Ingresa</a></li>
+            </ul>
+        </div>
+    </header>
+
     <!--MODAL-->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -25,20 +60,25 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    
+
                 </div>
             </div>
         </div>
     </div>
 
     <!--IMAGES-->
+    <div class="sections gold-section">
+        <h2 class="title-white-color">¡Explora las mejores recetas de diferentes países!</h2>
+
+    </div>
+
     <main class="main">
         <section class="container-img">
+            <img id="flag-img" src="https://hepa.com.co/wp-content/uploads/2021/10/99c42ff5a5ef6133afe8f90bf0464259.jpg"
+                alt="colombia">
             <img id="flag-img"
                 src="https://t1.uc.ltmcdn.com/es/posts/6/1/8/significado_de_la_bandera_y_el_escudo_de_mexico_44816_600.jpg"
                 alt="mexico">
-            <img id="flag-img" src="https://hepa.com.co/wp-content/uploads/2021/10/99c42ff5a5ef6133afe8f90bf0464259.jpg"
-                alt="colombia">
             <img id="flag-img" src="https://banderas.top/wp-content/uploads/2020/08/Bandera-de-Espana.jpg" alt="españa">
             <img id="flag-img"
                 src="https://media.istockphoto.com/id/178137781/es/foto/bandera-de-jap%C3%B3n.jpg?s=612x612&w=0&k=20&c=g5rWSDrIP3J0CTOmkZa3234UCv15yky7TXX2PVrODIY="
@@ -54,15 +94,54 @@
 
     </div>
 
-    <button id="btn-back" class="btn btn-dark">Atras</button>
+    <button id="btn-back" class="btn btn-warning  visually-hidden">Atras</button>
+
+    <!--FOOTER-->
+    <footer class="footer">
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
 
-    <script src="js/video.js"></script>
+        <footer class="footer" id="contactanos">
 
+            <img src="./imagenes/Shape_footer.webp" alt="" srcset="">
+
+            <div class="container-form">
+                <h3>No te pierdas de nada!</h3>
+                <form class="form" action="" id="form">
+
+                    <input type="text" name="email_id" id="email_id" placeholder="Ingresa tu email">
+                    <button class="send-email" type="submit" id="button" value="Send Email">Suscríbete</button>
+                    <!-- <label for="email_id">email_id</label>
+            <input type="text" name="email_id" id="email_id"> -->
+                </form>
+            </div>
+
+            <div class="sections_footer">
+                <div class="information_footer">
+                    <ul>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Descubrir</a></li>
+                        <li><a href="#">Explorar</a></li>
+                        <li><a href="#">Videos</a></li>
+                    </ul>
+                </div>
+                <div class="social-media">
+                    <a href="https://www.youtube.com/watch?v=qE4RDg0TUrc" target="_blank"><i
+                            class="bi bi-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" target="_blank"><i class="bi bi-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+
+        <script src="js/video.js"></script>
+        <script src="js/app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

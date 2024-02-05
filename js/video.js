@@ -4,6 +4,7 @@ const flagImgs = document.querySelectorAll("#flag-img")
 const main = document.querySelector(".main")
 const btnBack = document.querySelector("#btn-back")
 const modalBody = document.querySelector('.modal-body');
+const message = document.querySelector(`.message`)
 
 let contryData;
 let contryName;
@@ -18,7 +19,7 @@ window.addEventListener(`DOMContentLoaded`, async () => {
 
 container.addEventListener("click", (event) => {
 
-  const btnDetalles = event.target.classList.contains("editar")
+  const btnDetalles = event.target.classList.contains("detalles")
 
   if (btnDetalles === true) {
     const id = event.target.getAttribute("data-id")
@@ -48,7 +49,7 @@ function cardInformation() {
       <div class="card-body">
         <h5 class="card-title">${contry.title}</h5>
         <p class="card-text">${contry.description}</p>
-        <button type="button" class="btn btn-dark editar"  data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-id="${id}">
+        <button type="button" class="btn btn-warning detalles"  data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-id="${id}">
              Detalles
         </button>
       </div>
@@ -73,9 +74,8 @@ btnBack.addEventListener("click", function () {
   container.classList.toggle("visually-hidden")
 
   if (!main.classList.contains("visually-hidden")) {
-    btnBack.classList.add("visually-hidden");
+    btnBack.classList.add("visually-hidden")
   }
-
 })
 
 async function brigOne(id) {
@@ -89,11 +89,12 @@ function showMondal(dataId) {
 
   modalBody.innerHTML = `
     <div class="card-body">
-      <iframe width="465" height="315" src="${dataId.video_iframe}"
-              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-              clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-      </iframe>
 
+    <iframe width="465" height="315" src="${dataId.video_iframe}"
+      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+      clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+      
       <table class="table table-striped-columns">
         <tr>
         <td>Canal</td>
@@ -102,12 +103,6 @@ function showMondal(dataId) {
       </table>
 
       <p>"¡Hola! En la descripción del video, encontrarás todos los ingredientes que necesitas, las herramientas requeridas y los tiempos de preparación detallados. ¡Espero que disfrutes al máximo el video! 😊",</p>
-    `
+    </div>
+      `
 }
-
-function test(id) {
-  console.log("Esta es una prueba");
-  brigOne(id)
-}
-
-

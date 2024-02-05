@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
     <script src="https://kit.fontawesome.com/92bb7e2b75.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="shortcut icon" href="imagenes/Icono.webp" type="image/x-icon">
@@ -11,9 +10,29 @@
     <link rel="stylesheet" href="styles/style.css">
     <!-- Iconos de BoxIcons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!--Email js-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">emailjs.init('8hu8xArStHs7JKQ6S')</script>
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <div class="nav-principal">
+            <a href="#" class="logo-mobile"><img src="./imagenes/FreshFlavors.webp" alt=""></a>
+
+            <button class="openSidebar"> <i class='bx bx-menu'></i></button>
+
+            <ul id="sidebar" class="hidden">
+                <li><a href="http://127.0.0.1:5501/index.html#" class="option">Inicio</a></li>
+                <li><a href="http://127.0.0.1:5501/index.html#second-container" class="option">Quienes somos</a></li>
+                <li><a href="http://127.0.0.1:5501/index.html#third-container" class="option">Recetas</a></li>
+                <a href="#" class="logo"><img src="./imagenes/FreshFlavors.webp" alt=""></a></li>
+                <li><a href="http://127.0.0.1:5501/index.html#fourth-container" class="option">Videos</a></li>
+                <li><a href="#contactanos" class="option">Contáctanos</a></li>
+                <li><a href="login_register.html" class="suscription">Ingresa</a></li>
+            </ul>
+        </div>
+    </header>
 
     <main class="main-about-us">
         <div class="sections gold-section">
@@ -34,56 +53,50 @@
                 <img src="imagenes/imagenes-about-us/chef.svg" alt="svg-chef" class="svg">
             </div>
         </div>
-        <div class="sections black-section">
+
+
+        <div class="sections black-section delete-section">
+            <h2 class="title-gold-color">Clientes Satisfechos: Empresas que Han Elevado su Éxito con Nuestros Servicios</h2>
             <div class="wrapper">
                 <div class="container">
                     <input type="radio" name="slide" id="c1" checked>
                     <label for="c1" class="card">
                         <div class="row">
-                            <div class="icon">1</div>
                             <div class="description">
-                                <h4>Winter</h4>
-                                <p>Winter has so much to offer -
-                                 creative activities</p>
+                                <h4>Food salinas</h4>
+                                <p>"Por la importacia de la alimentación"</p>
                             </div>
                         </div>
                     </label>
                     <input type="radio" name="slide" id="c2" >
                     <label for="c2" class="card">
                         <div class="row">
-                            <div class="icon">2</div>
                             <div class="description">
-                                <h4>Digital Technology</h4>
-                                <p>Gets better every day -
-                                 stay tuned</p>
+                                <h4>Verde Bendito</h4>
+                                <p>"Buscando el bienestar de las personas"</p>
                             </div>
                         </div>
                     </label>
                     <input type="radio" name="slide" id="c3" >
                     <label for="c3" class="card">
                         <div class="row">
-                            <div class="icon">3</div>
                             <div class="description">
-                                <h4>Globalization</h4>
-                                <p>Help people all over the world</p>
+                                <h4>bon appetit</h4>
+                                <p>"El toque de la comida francesa"</p>
                             </div>
                         </div>
                     </label>
                     <input type="radio" name="slide" id="c4" >
                     <label for="c4" class="card">
                         <div class="row">
-                            <div class="icon">4</div>
                             <div class="description">
-                                <h4>New technologies</h4>
-                                <p>Space engineering becomes
-                                 more and more advanced</p>
+                                <h4>Matasa</h4>
+                                <p>"Por un trato correcto de los ingredientes"</p>
                             </div>
                         </div>
                     </label>
                 </div>
             </div> 
-            <h2 class="title-gold-color"></h2>
-            <h2 class="title-gold-color"></h2>
         </div>
     </main>
     

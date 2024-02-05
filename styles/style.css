@@ -512,8 +512,13 @@ section{
     border: 2px solid rgb(0, 0, 0);
 }
 
-@media (max-width: 939px) {
+@media screen and (max-width: 995px), 
+       screen and (max-height: 700px){
     .containers{
+        height: auto;
+    }
+
+    .containers_content{
         height: auto;
     }
     .nav-principal .logo img {
@@ -525,6 +530,8 @@ section{
         font-size: 12px;
     }
 }
+
+
 
 @media (max-width: 858px) {
     .nav-principal .logo-mobile {
