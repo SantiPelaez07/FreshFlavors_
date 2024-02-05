@@ -8,6 +8,8 @@ const userLogin = document.querySelector(".dropbtn")
 const URL = "http://localhost:3000/users"
 
 
+const inputInicial = document.querySelector(".input_ingredients") 
+
 //Eventos
 document.addEventListener("DOMContentLoaded", (event) => {
   event.preventDefault();
@@ -40,3 +42,4 @@ function cerraSesion() {
   localStorage.removeItem("datas");
   window.location.href = '/index.html';
 }
+

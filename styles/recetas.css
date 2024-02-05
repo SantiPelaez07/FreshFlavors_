@@ -176,9 +176,9 @@
 }
 
 .footer {
-    margin-top: 45px;
+    margin-top: 75px;
 }
 
-.owl-carousel {
-    z-index: -1;
+.nav-principal {
+    z-index: 1000;
 }

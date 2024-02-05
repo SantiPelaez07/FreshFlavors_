@@ -50,7 +50,7 @@ btn.addEventListener("click", async (event) => {
                 <div class="card-title">
                     <h4 class="h4">${dato.recipe.label}</h4>
                 </div>
-                <button type="button" imagenplato="${dato.recipe.image}" calorias="${Math.round(dato.recipe.calories)}" nombreplato="${dato.recipe.label}" ingredientes="${ingredientes}" class="btn btn-primary btn-buscar d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" imagenplato="${dato.recipe.image}" calorias="${Math.round(dato.recipe.calories)}" nombreplato="${dato.recipe.label}" ingredientes="${ingredientes}" class="btn btn-primary d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Ver receta
             </button>
             </div>

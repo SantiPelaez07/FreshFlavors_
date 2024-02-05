@@ -81,8 +81,8 @@ section{
     margin-top: 15px;
     width: 40%;
     height: 40px;
-    border-radius: 30px;
-    box-shadow: 5px 4px 10px rgb(122, 122, 122);
+    border-radius: 10px;
+    box-shadow: 5px 4px 6px rgb(122, 122, 122);
     outline: none;
     border: none;
     padding: 0px 15px;
@@ -398,4 +398,50 @@ section{
     /* Otros estilos específicos para pantallas más grandes */
   }
 
+  /* Diseño btn-animation Dayron Zapata borrar de ser necesario */
 
+  .btn-animation {
+      cursor: pointer;
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 13rem;
+      overflow: hidden;
+      height: 3rem;
+      background-size: 300% 300%;
+      border-radius: 5rem;
+      transition: 0.5s;
+      animation: gradient_301 5s ease infinite;
+      border: double 4px transparent;
+      background-image: linear-gradient(#000000, #000000),  linear-gradient(137.48deg, #F6BC4E 10%,#F6BC4E 45%, #F6BC4E 67%, #F6BC4E 87%);
+      background-origin: border-box;
+      background-clip: content-box, border-box;
+    }
+    
+  
+  
+    strong {
+      z-index: 2;
+      font-size: 18px;
+      color: #FFFFFF;
+      text-shadow: 0 0 4px rgb(0, 0, 0);
+    }
+    
+  
+  
+    
+    .btn-animation:hover {
+      transform: scale(1.1)
+    }
+    
+    .btn-animation:active {
+      border: double 4px #F6BC4E;
+      background-origin: border-box;
+      background-clip: content-box, border-box;
+      animation: none;
+    }
+    
+    .btn-animation:active .circle {
+      background: #F6BC4E;
+    }
