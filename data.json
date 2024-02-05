@@ -3,10 +3,10 @@
         {
             "colombia": [
                 {
-                    "id":"COL1",
-                    "title":"Buñuelos Colombianos",
+                    "id": "COL1",
+                    "title": "Buñuelos Colombianos",
                     "channel_name": "Cocinadictos",
-                    "description": "Bolitas hechas con queso costeño y harina de yuca o almidón y harina de maíz, uno de los pasabocas favoritos de Colombia.",
+                    "description": "Bolitas de queso costeño con harina de yuca y maíz, popular pasaboca colombiano. ¡Delicia crujiente y sabrosa!",
                     "image": "https://i.ytimg.com/vi/7S4WDl42XcU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBqsEw8TmMkiowgg-iuLuuS_ty5UQ",
                     "video_iframe": "https://www.youtube.com/embed/7S4WDl42XcU?si=3v2-JkIU0GARV5I-"
                 },
@@ -14,7 +14,7 @@
                     "id": "COL2",
                     "title": "Masato de arroz",
                     "channel_name": "Rosita Cocina",
-                    "description": "Bebida que se prepara con base de yuca, arroz, maíz, avena o piña, que tiene su origen en la selva amazónica.",
+                    "description": "Bebida amazónica elaborada con yuca, arroz, maíz, avena o piña. Tradición refrescante de la selva.",
                     "image": "https://i.ytimg.com/vi/ivRfYHeGAYA/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLDBvR6Q5FOUISCwtDv_nWf8vhXldg",
                     "video_iframe": "https://www.youtube.com/embed/ivRfYHeGAYA?si=0wq8cJy8I5rvfQUq"
                 },
@@ -22,7 +22,7 @@
                     "id": "COL3",
                     "title": "Bandeja paisa",
                     "channel_name": "La Cooquette",
-                    "description": "Construcción de varias preparacione stradicionales de la región cafetera, especialmente de Antioquia, que busca mostrar un todo de la gastronomía paisa",
+                    "description": "Plato típico paisa, arroz, frijoles, carne molida, huevo, chicharrón, aguacate y plátano. ¡Festín de sabores!",
                     "image": "https://i.ytimg.com/vi/P3W6BRM_65U/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLBz8FOymVLwKYo9UjmkpIMJbeBdeg ",
                     "video_iframe": "https://www.youtube.com/embed/P3W6BRM_65U?si=SAz8H5UI5K5UMFoi"
                 },
@@ -30,7 +30,7 @@
                     "id": "COL4",
                     "title": "Cholado",
                     "channel_name": "YesiFood",
-                    "description": "Coctel de frutas tradicional de la gastronomía Colombiana, que se disfruta en la sucursal del cielo, Cali Valle del Cauca",
+                    "description": "Cóctel de frutas tradicional de la gastronomía colombiana, disfrutado en la sucursal del cielo, Cali, Valle del Cauca.",
                     "image": "https://i.ytimg.com/vi/8kyMcD-ekOg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC1Vs6FWDbOgCP2uS6DWe0b8ERe_g",
                     "video_iframe": "https://www.youtube.com/embed/8kyMcD-ekOg?si=_Y44VB3b8O--56gv"
                 },
@@ -56,7 +56,7 @@
                     "id": "MEX2",
                     "title": "Sopa azteca",
                     "channel_name": "Kiwilimón",
-                    "description": "Platillo tradicional de la cocina mexicana, con ingredientes que incluyen tortillas de maíz, tomate, chiles, aguacate, crema, entre otros.",
+                    "description": "Platillo tradicional mexicano tambien conocido como sopa de tortilla, con tortillas, tomate, chiles, aguacate y crema entre otros",
                     "image": "https://i.ytimg.com/vi/p9cUy1TPiO4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDYD2WSEb5WRBaAP6VFerYOgHFZiQ",
                     "video_iframe": "https://www.youtube.com/embed/p9cUy1TPiO4?si=twzqB0_4EfptVZuj"
                 },
@@ -64,7 +64,7 @@
                     "id": "MEX3",
                     "title": "Horchata de arroz",
                     "channel_name": "Tulio recomienda",
-                    "description": "Bebida refrescante y dulce a base de arroz",
+                    "description": "Bebida refrescante elabora con agua, azúcar y arroz. También existen variantes que utilizan almendras o semillas de melón.",
                     "image": "https://i.ytimg.com/vi/TkJquE3wknQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCPdz5EMPwM7Px25KI84Mbajfr0_A",
                     "video_iframe": "https://www.youtube.com/embed/TkJquE3wknQ?si=VFIGViAV2Sy29ks4"
                 },
@@ -72,7 +72,7 @@
                     "id": "MEX4",
                     "title": "Pozole",
                     "channel_name": "Jauja Cocina Mexicana",
-                    "description": "Sopa espesa que tiene como ingrediente principal el maíz hominy, carne, y está sazonado con chiles, ajo, cebolla y otras especias",
+                    "description": "Sopa espesa que tiene como ingrediente principal el maíz hominy, carne, y está sazonado con chiles, ajo, cebolla y otras especias.",
                     "image": "https://i.ytimg.com/vi/-Bi0cC6uzDs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLChqwvSvKMX2pvhlmAcph129sIsoQ",
                     "video_iframe": "https://www.youtube.com/embed/-Bi0cC6uzDs?si=bAb2KV0z8bUQ_amT"
                 },
@@ -80,7 +80,7 @@
                     "id": "MEX5",
                     "title": "Rosca de reyes",
                     "channel_name": "José Ramón Castillo",
-                    "description": "Pan dulce que suele tener forma de anillo o corona decorada con frutas escarchadas de colores brillantes que simbolizan las joyas de la corona de los Reyes Magos",
+                    "description": "Pan dulce en forma de anillo, decorado con frutas escarchadas, evocando las joyas de los Reyes Magos. Delicioso y festivo.",
                     "image": "https://i.ytimg.com/vi/SclVcUWZUjs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD7XZvca3s70K0FUcQcLWQJys5l3A",
                     "video_iframe": "https://www.youtube.com/embed/SclVcUWZUjs?si=g1f1fkF9e7XtIHyc"
                 }
@@ -90,7 +90,7 @@
                     "id": "ESP1",
                     "title": "Tinto de verano",
                     "channel_name": "Tulio Recomienda",
-                    "description": "Bebida refrecante que mezcla vino tinto con una bebida carbonatada junto con algunos ingredientes adicionales para darle sabor y frescura",
+                    "description": "Bebida refrescante española, vino tinto con limonada y hielo. Ideal para los días calurosos. ¡Sabor veraniego en cada sorbo!",
                     "image": "https://i.ytimg.com/vi/2KJ0gGb_MDE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA7AqY_kNshJzUXkVzGVOeQ2kichw",
                     "video_iframe": "https://www.youtube.com/embed/2KJ0gGb_MDE?si=-ErDv3Ct_yDpG1mY"
                 },
@@ -98,7 +98,7 @@
                     "id": "ESP2",
                     "title": "Paella valenciana",
                     "channel_name": "La cocina de Masito",
-                    "description": "Es una preparación que destaca por su deliciosa combinación de arroz y una variedad de ingredientes frescos, principalmente de la región.",
+                    "description": "Deliciosa mezcla de arroz que destaca con frescos ingredientes regionales. Una preparación que sorprende en cada bocado.",
                     "image": "https://i.ytimg.com/vi/vWySIREExjo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCfeVnRpleL6p3P7wZjnQLdviehrw",
                     "video_iframe": "https://www.youtube.com/embed/vWySIREExjo?si=rcTgGPficKMdoPAI"
                 },
@@ -106,7 +106,7 @@
                     "id": "ESP3",
                     "title": "Tortilla de patatas",
                     "channel_name": "Katastrofa La Cocina",
-                    "description": "Plato emblemático de la cocina española que mezcla ingredientes principales como huevos y patatas (papas)",
+                    "description": "Plato emblemático de la cocina española que mezcla ingredientes principales como huevos y patata, un bocado sabroso y reconfortante.",
                     "image": "https://i.ytimg.com/vi/ULle2vGte8k/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAo89YIgZBvEJfe4dRSw0seiCt5OQ",
                     "video_iframe": "https://www.youtube.com/embed/ULle2vGte8k?si=GGoE4lXWLYLz7o6l"
                 },
@@ -114,7 +114,7 @@
                     "id": "ESP4",
                     "title": "Crema Catalana",
                     "channel_name": "Javi Recetas",
-                    "description": "Postre tradicionaL suave y cremoso con una capa crujiente de caramelo en la parte superior.",
+                    "description": "Postre tradicional con base de natillas de textura suave con una capa crujiente de azúcar caramelizada.",
                     "image": "https://i.ytimg.com/vi/iiBl0VIsmr0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBMVx2gzsV79C-UQ5i8940-EIVP1g",
                     "video_iframe": "https://www.youtube.com/embed/iiBl0VIsmr0?si=BYXghQ7sEl-gdCqP"
                 }
@@ -124,7 +124,7 @@
                     "id": "JAP1",
                     "title": "Mochis",
                     "channel_name": "Cocina con Coqui",
-                    "description": "Pastelito gelatinoso de pasta elástica, relleno de ingredientes dulces o salados",
+                    "description": "Pastelito de pasta de arroz gelatinoso y elástico, relleno de sabores suaves y deliciosos. Tradición en cada bocado.",
                     "image": "https://i.ytimg.com/vi/JngarQlVtck/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLArDGlXE1tCEwq_Pfsjwo1SK1MitQ",
                     "video_iframe": "https://www.youtube.com/embed/JngarQlVtck?si=oKbI3iIz63md5l0F"
                 },
@@ -132,15 +132,15 @@
                     "id": "JAP2",
                     "title": "Rollo Primavera",
                     "channel_name": "Cocina Japonesa con Yuta",
-                    "description": "Rollo delgado relleno de diversos ingredientes, que puede ser tanto salado como dulce",
+                    "description": "envoltura de masa fina rellena de vegetales y carne, frito o al vapor. Delicia crujiente y fresca de la cocina asiática.",
                     "image": "https://i.ytimg.com/vi/lzCkHimby2s/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBpE4knMBv7UZVO5a5D7s_SDbnfVw",
-                    "video_iframe":"https://www.youtube.com/embed/lzCkHimby2s?si=S9JtZz3Z9KcwXZvB"
+                    "video_iframe": "https://www.youtube.com/embed/lzCkHimby2s?si=S9JtZz3Z9KcwXZvB"
                 },
                 {
                     "id": "JAP3",
                     "title": "Calpico",
                     "channel_name": "Sazonando a mi Estilo",
-                    "description": "Bebida láctea no alcohólica fermentada con un sabor ligeramente ácido y dulce",
+                    "description": "Bebida no carbonatada, láctea y ligeramente fermentada. Refrescante, con sabores frutales. ¡Delicia asiática!",
                     "image": "https://i.ytimg.com/vi/u06F3QTn7As/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAAal8UOQb5lmAnj3Sfekp2Ihldkw",
                     "video_iframe": "https://www.youtube.com/embed/lzCkHimby2s?si=_K2BQepcuDGYMQkp"
                 },
@@ -148,7 +148,7 @@
                     "id": "JAP4",
                     "title": "Sushi",
                     "channel_name": "Cocina con Coqui",
-                    "description": "El sushi incluye diversas formas y estilos, como nigiri (bolas de arroz con pescado o mariscos encima), sashimi (rebanadas finas de pescado crudo), maki (rollos envueltos en algas nori) y temaki (conos de alga rellenos).",
+                    "description": "Arroz sazonado con vinagre, pescado fresco, vegetales y algas. Arte culinario en bocados pequeños y sabrosos.",
                     "image": "https://i.ytimg.com/vi/Fjdyw8Cvxbs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD45NOEycdiZ0sf1XNghpFPtgF0rA",
                     "video_iframe": "https://www.youtube.com/embed/Fjdyw8Cvxbs?si=nnp7d6gyx5WnRE4w"
                 },
@@ -166,7 +166,7 @@
                     "id": "OTR1",
                     "title": "Cerveza de jengibre",
                     "channel_name": "¡Que el papeo te acompañe! ",
-                    "description": "Deliciosas y entretenidas creaciones culinarias concebidas por un apasionado de la cultura geek.",
+                    "description": "Refresco fermentado con jengibre, azúcar y especias. Picante y refrescante, una opción única para los amantes de los sabores intensos.",
                     "image": "https://i.ytimg.com/vi/zhue7zKcJcg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCrfyCtDtuZyswGUkMOZXQMG9qe3g",
                     "video_iframe": "https://www.youtube.com/embed/zhue7zKcJcg?si=xm5WlnsoD1fLoAgF"
                 },
@@ -174,7 +174,7 @@
                     "id": "OTR2",
                     "title": "Cerveza de mantequilla",
                     "channel_name": "La Cooquette",
-                    "description": "La auténtica cerveza de mantequilla de Harry Potter.",
+                    "description": "Bebida inspirada en Harry Potter, dulce y espumosa con notas de caramelo y vainilla. Un toque mágico para disfrutar.",
                     "image": "https://i.ytimg.com/vi/O4_8qaOLSos/hq720_2.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGABwAcABBvABAfgB3gOAAuADigIMCAAQARhyIFIoPTAP&rs=AOn4CLBEweAKV9DWXoxrCUUsO0T0k2FNpw",
                     "video_iframe": "https://www.youtube.com/embed/O3EN0MVkpZU?si=i589oHPkrHo-dsO-"
                 },
@@ -182,7 +182,7 @@
                     "id": "OTR3",
                     "title": "Pan de plátano de World Of Warcraft",
                     "channel_name": "¡Que el papeo te acompañe!",
-                    "description": "Se trata de un pan de plátano, suave, jugoso y muy esponjoso. Aunque se llame PAN de plátano, se trata de un dulce perfecto como postre.",
+                    "description": "Pan de plátano, suave, jugoso y muy esponjoso. Aunque se llame PAN de plátano, se trata de un dulce perfecto como postre.",
                     "image": "https://i.ytimg.com/vi/9F2HpHmtRcM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC9FxYrgnrYIoL-LnwAM2apdXusGw",
                     "video_iframe": "https://www.youtube.com/embed/9F2HpHmtRcM?si=pwH3FJ8S1ZSSjmra"
                 },
@@ -190,7 +190,7 @@
                     "id": "OTR4",
                     "title": "Chocolate caliente",
                     "channel_name": "La Cooquette",
-                    "description": "La iconica receta de Ned Flanders de The Simpsons. Una mezcla entre chocolate español y chocolate mexican",
+                    "description": "La icónica receta de Ned Flanders de The Simpsons. Una mezcla entre chocolate español y chocolate mexicano.",
                     "image": "https://i.ytimg.com/vi/2dr-K8qGi-M/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLClAL2NPR8w3uO9H-SW9MlCRTpvLg",
                     "video_iframe": "https://www.youtube.com/embed/2dr-K8qGi-M?si=W2GJViS6FbGwqexI"
                 }
