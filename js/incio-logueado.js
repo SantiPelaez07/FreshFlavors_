@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     password: localUser
 }
 
-  console.log(`Contraseña: ${list.email}`)
+  console.log(`Contraseña: ${localUser  }`)
   // listLocal = JSON.parse(localUser)
   // console.log(listLocal);
   getUser()
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     function getUser() {
       title.innerHTML = ""
-      title.innerHTML = `¡Bienvenido ${localUser}, estamos ansiosos de verte usando nuestros servicios!`
+      title.innerHTML = `¡Bienvenido ${localUser[0].user}, estamos ansiosos de verte usando nuestros servicios!`
     }
   })
 
