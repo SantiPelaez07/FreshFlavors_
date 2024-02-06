@@ -73,3 +73,14 @@ option.addEventListener("click", (event) => {
 //   event.preventDefault();
 //   event.target.conta
 // })
+
+
+const inputPrincipal = document.querySelector(".input_ingredients");
+const btnPrincipal = document.querySelector(".btn-animation");
+
+btnPrincipal.addEventListener("click", (event) => {
+  event.preventDefault();
+  console.log(input.value);
+  input.value = inputPrincipal.value
+  window.location.href = "/recetas.html"
+})

@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     function getUser() {
       title.innerHTML = ""
-      title.innerHTML = `¡Bienvenido ${listLocal[0].user}, estamos ansiosos de verte usando nuestros servicios!`
+      title.innerHTML = `¡Bienvenido  <span class="nameUser">${listLocal[0].user}</span>, estamos ansiosos de verte usando nuestros servicios!`
     }
   })
 
