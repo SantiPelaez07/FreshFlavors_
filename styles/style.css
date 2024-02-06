@@ -153,7 +153,7 @@ section{
 
 .content button{
     cursor: pointer;
-    width: 35%;
+    width: 43%;
     border-radius: 10px;
     color: var(--white-color);
     background-color: var(--black-color);
@@ -161,7 +161,7 @@ section{
     height: 50px;
     font-size: 18px;
     margin-top: 25px;
-    padding: 5px;
+    padding: 6px;
     transition: 0.5s;
     border: none;
 }
@@ -310,7 +310,8 @@ section{
     }
 
     .containers_content button{
-        min-width: fit-content;
+        min-width: max-content;
+        padding: 5px 20px;
 
     }
 
@@ -422,7 +423,6 @@ section{
   
   
     strong {
-      z-index: 2;
       font-size: 18px;
       color: #FFFFFF;
       text-shadow: 0 0 4px rgb(0, 0, 0);

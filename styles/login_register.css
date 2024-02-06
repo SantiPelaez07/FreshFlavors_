@@ -28,12 +28,13 @@ body{
 
 .imgFondo{
     height: 100%;
-    width: 50%;
-    position: absolute;
+    width: 20%;
+    position: fixed;
     right: 0;
     top: 0;
-    background: url(../imagenes/Kiwi.png) no-repeat;
-    background-position: -50px ;
+    background: url(../imagenes/Kiwi.png);
+    background-repeat: no-repeat;
+    background-position: 0px -30px;
 }
 
 .container{

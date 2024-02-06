@@ -50,11 +50,24 @@ function showAlert(message, inconName = "error", title = "!Error") {
 //Animación del responsive del NavBar
 const btnopenSidebar = document.querySelector(".openSidebar")
 const sidebar = document.querySelector("#sidebar")
+const option = document.querySelector(".option")
 
 btnopenSidebar.addEventListener("click" , (e) => {
 e.preventDefault()
-sidebar.classList.toggle("show")  
+sidebar.classList.toggle("show") 
+
 })
+
+option.addEventListener("click", (event) => {
+  event.preventDefault();
+  sidebar.classList.toggle("show")
+})
+// function cerrar (){ 
+//   sidebar.click()
+// }
+// })
+
+
 
 // document.addEventListener("click", (event) => {
 //   event.preventDefault();

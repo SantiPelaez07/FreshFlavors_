@@ -88,7 +88,7 @@
 }
 
 .show{
-    left: 100%;
+    left: 0%;
 }
 
 .nav-principal .openSidebar{
@@ -134,12 +134,16 @@
 @media (max-width: 858px) {
     .nav-principal .logo-mobile {
         display: block;
-        margin: 5px;
+        margin: 0 20px;
+    }
+
+
+    .bx-menu{
+        margin: 0 20px;
     }
 
     .nav-principal .openSidebar{
         display: block;
-        margin: 5px;
     }
 
     .nav-principal .logo-mobile img {
