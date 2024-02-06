@@ -84,3 +84,11 @@ btnPrincipal.addEventListener("click", (event) => {
   input.value = inputPrincipal.value
   window.location.href = "/recetas.html"
 })
+
+
+const btnReceta = document.querySelector(".btnRecetas")
+
+btnReceta.addEventListener("click", (e) => {
+  e.preventDefault();
+  window.location.href ="/recetas.html"
+})
