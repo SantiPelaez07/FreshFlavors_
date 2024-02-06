@@ -78,7 +78,6 @@ btnBack.addEventListener("click", function () {
 async function brigOne(id) {
   const cardData = contryData[0][contryName][id]
   console.log(cardData);
-
   showMondal(cardData)
 }
 
