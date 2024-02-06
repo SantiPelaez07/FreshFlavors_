@@ -198,3 +198,8 @@ header{
 .information_footer ul {
     padding-left: 0px;
 }
+
+
+.nav-principal{
+    z-index: 5;
+}
