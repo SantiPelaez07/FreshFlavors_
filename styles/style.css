@@ -41,7 +41,7 @@ body{
     background-image: linear-gradient(
         rgba(0,0,0,0.7),
         rgba(0,0,0,0.7)),
-        url("../imagenes/prueba.webp");
+        url("../imagenes/bread-2178874.jpg");
 
     background-size: cover; /* Ajusta el tamaño de la imagen para cubrir completamente el contenedor */
     background-position: center; /* Centra la imagen en el contenedor */
@@ -49,13 +49,14 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .main-title {
     color: #fff;
     margin: 10px 10px 30px;
-    font-size: 30px;
+    /* No modifcar - Esencial para el responsive- Si lo va a modificar usar clamp-generator */
+    font-size: clamp(1.8125rem, 1.3125rem + 1.6vw, 2.8125rem);
     text-align: center;
 }
 
@@ -77,18 +78,19 @@ section{
 }
 
 .input_ingredients{
+    border: 2px solid #000;
+    text-align: center;
     min-width: max-content;
     margin-top: 15px;
-    width: 40%;
-    height: 40px;
-    border-radius: 10px;
-    box-shadow: 5px 4px 6px rgb(122, 122, 122);
+    width: 48%;
+    height: 58px;
+    border-radius: 14px;
+    /* box-shadow: 5px 4px 6px rgb(122, 122, 122); */
     outline: none;
-    border: none;
     padding: 0px 15px;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 17.5px;
 }
 
 .label_ingredients{
@@ -316,7 +318,7 @@ section{
     }
 
     .containers_content img{
-        min-width: 80%;
+        min-width: 50%;
         min-height: 50%;
     }
 
@@ -367,6 +369,10 @@ section{
 
     .information_footer{
         justify-content: center;
+    }
+
+    .first-container{
+        height: auto;
     }
 
     .sections_footer ul{
