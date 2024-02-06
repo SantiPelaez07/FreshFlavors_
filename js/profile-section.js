@@ -6,6 +6,12 @@ const saveChanges = document.querySelector(".btn-primary")
 //Sexo de la persona
 const seleccionSexo = document.querySelector(".custom-select")
 
+//Contraseña
+  const contraseñaActual = document.getElementById("contraseña-actual");
+  const nuevaContraseña = document.getElementById("nueva-contraseña");
+  const confirmacionNuevaContraseña = document.getElementById("confirmacion-nueva-contraseña");
+
+
 seleccionSexo.addEventListener("input", (e) => {
   e.preventDefault();
     const imagenASeleccionar = document.querySelector(".img_sexo")
@@ -50,10 +56,17 @@ saveChanges.addEventListener("click", (e) => {
 })
 
 
+
+
+
+
 function validarContraseña() {
-  const contraseñaActual = document.getElementById("contraseña-actual");
-  const nuevaContraseña = document.getElementById("nueva-contraseña");
-  const confirmacionNuevaContraseña = document.getElementById("confirmacion-nueva-contraseña");
+
+  if (!nuevaContraseña.value  && !confirmacionNuevaContraseña.value && !contraseñaActual.value) {
+    return
+  }
+
+
   console.log(contraseñaActual.value);
   console.log(listLocal[0].password)
 
@@ -84,9 +97,13 @@ function validarContraseña() {
  })
 
 
+
+
+
  function validatePasswordSegurity(){
-  const nuevaContraseña = document.getElementById("nueva-contraseña");
-  const confirmacionNuevaContraseña = document.getElementById("confirmacion-nueva-contraseña");
+
+
+
 
   if (!nuevaContraseña.value  || !confirmacionNuevaContraseña.value) {
     return {validated: false, message: "Campos vacíos"}
@@ -105,6 +122,13 @@ function validarContraseña() {
 
 
 
+
+
+
+
+
+
+// Sweet Alert
 function    showAlert(message, title = "Error!", icon =  "error" ) {
   Swal.fire({
       title: title,
