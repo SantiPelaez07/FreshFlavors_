@@ -10,7 +10,6 @@ let contryData;
 let contryName;
 
 
-
 //=========EVENTOS=========
 window.addEventListener(`DOMContentLoaded`, async () => {
   contryData = await getData()
@@ -28,7 +27,6 @@ container.addEventListener("click", (event) => {
 })
 
 
-
 //=========FUNCIONES=========
 async function getData() {
   const URL = "http://localhost:3000/countries"
@@ -40,7 +38,6 @@ async function getData() {
 
 function cardInformation() {
   container.innerHTML = ""
-  console.log(contryData[0][contryName]);
   contryData[0][contryName].forEach((contry, id) => {
 
     container.innerHTML += `
