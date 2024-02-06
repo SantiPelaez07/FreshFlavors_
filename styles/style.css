@@ -93,6 +93,12 @@ section{
     font-size: 17.5px;
 }
 
+.input_ingredients:hover{
+    border: 3px solid #000;
+}
+
+
+
 .label_ingredients{
     font-weight: bold;
     color: var(--gold-color);
