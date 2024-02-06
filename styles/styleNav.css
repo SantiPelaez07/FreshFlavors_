@@ -44,7 +44,6 @@
       top: 0%;
   }
 
-
   .nav-principal ul li::after {
       content: "";
       position: absolute;
@@ -59,7 +58,6 @@
   .nav-principal ul li:hover::after {
       left: 0;
   }
-
 
   .nav-principal .logo img {
       height: 50px;

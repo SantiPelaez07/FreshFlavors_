@@ -15,6 +15,7 @@
 }
 
 /*=========FLAGS========= */
+
 body {
     background-color: var(--white-color);
     font-family: var(--font-family);
@@ -22,24 +23,25 @@ body {
 }
 
 .sections {
-    background-color: #87cd32;
-    padding: 20px 5%;
+    background-color: black;
     display: flex;
     align-items: flex-start;
     justify-content: center;
 }
 
-.gold-section {
+.sections h2 {
+    margin: 20px;
+    font-size: 39px;
 
-    width: 100%;
 }
 
 .main {
     background-color: #000000;
-    /* width: 100%; */
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column-reverse;
 }
 
 .container-img {
@@ -76,8 +78,6 @@ section img:hover {
     filter: contrast(120%);
 }
 
-
-
 .title-white-color {
     color: var(--white-color);
     font-weight: bold;
@@ -86,9 +86,6 @@ section img:hover {
     font-size: clamp(1.875rem, 1.1538rem + 2.3077vw, 3.75rem);
     margin-top: 130px;
 }
-
-
-
 
 /*=========CARD=========*/
 .container {
