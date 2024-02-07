@@ -13,7 +13,7 @@ video {
     object-fit: cover;
     z-index: -100;
     position: absolute;
-    top: 70px;
+    top: 0;
 }
 
 .logo-mobile {
@@ -21,17 +21,19 @@ video {
 }
 
 .bienvenida {
-    padding: 0;
     width: 100%;
     height: 100%;
 }
 
+.nameUser{
+    color: #f8b435;
+    /* width: 18px;
+    padding: 0 10px 0 8px; */
+}
 
 .bienvenida .title{
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 20px;
     color: #fff;
     font-size: 30px;
 }
@@ -47,6 +49,51 @@ option {
     text-align: center;
     font-size: 16px;
 }
+
+/* Estilos dayron, borrar de ser necesario  */
+/* Funcionando */
+/* Dropdown Button */
+.dropbtn {
+    border-radius: 20px;
+  background-color: #000000;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  width: 130px;
+  justify-content: center;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1; border-radius: 20px;}
+.dropdown:hover .dropdown-content {display: block; border-radius: 20px;}
+.dropdown:hover .dropbtn {background-color: #ffffff; color: #000000;}
+
+
 
 /* Sección del primer container */
 .first-container1 {
@@ -110,10 +157,7 @@ section{
     background-color: var(--black-color);
     font-size: 20px;
     width: 130px;
-    height: 70px;
-    outline: none;
-    cursor: pointer;
-}
+    height: 70px;x
 
 
 
@@ -208,54 +252,6 @@ section{
 }
 
 
-/* Estilos dayron, borrar de ser necesario  */
-/* Funcionando */
-/* Dropdown Button */
-.dropbtn {
-    border-radius: 20px;
-  background-color: #000000;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  font-weight: 700;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  width: 130px;
-  justify-content: center;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  right: 0;
-  background-color: white;
-  min-width: 200px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1; border-radius: 20px;}
-.dropdown:hover .dropdown-content {display: block; border-radius: 20px;}
-.dropdown:hover .dropbtn {background-color: #ffffff; color: #000000;}
-
-
-.nameUser{
-    color: #f8b435;
-    display: flex;
-}
 
 @media (max-width: 858px) {
 
@@ -309,4 +305,5 @@ section{
         padding: 10px 60px;
 
     }
+}
 }

@@ -47,6 +47,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
         inputEmail.value = `${listLocal[0].email}` 
       }
 
+      const titleInicio = document.querySelector(".titleInicio")
+      titleInicio.innerHTML =`User profile | ${listLocal[0].user}`
+  
+      const userLogin = document.querySelector(".dropbtn");
+      userLogin.innerHTML = `${listLocal[0].user}`
+
 
 
 saveChanges.addEventListener("click", (e) => {
@@ -141,3 +147,5 @@ function    showAlert(message, title = "Error!", icon =  "error" ) {
       confirmButtonText: 'Aceptar'
   })
 }
+
+

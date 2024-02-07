@@ -3,34 +3,41 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CodingDung | Profile Template</title>
+        <title class="titleInicio"></title>
 
         <link rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" href="styles/profile-section.css">
         <link rel="stylesheet" href="styles/styleNav.css">
+        <link rel="stylesheet" href="styles/login_users.css">
         
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
     </head>
 <body>
+    <!-- <header..> -->
+        <header>
+            <div class="nav-principal">
+                <a href="#" class="logo-mobile"><img src="./imagenes/FreshFlavors.webp" alt=""></a>
+                <button class="openSidebar"> <i class='bx bx-menu'></i></button>
     
-
-    <header>
-        <div class="nav-principal">
-            <a href="#" class="logo-mobile"><img src="./imagenes/FreshFlavors.webp" alt=""></a>
-
-            <button class="openSidebar"> <i class='bx bx-menu'></i></button>
-
-            <ul id="sidebar" class="hidden">
-                <li><a href="http://127.0.0.1:5501/index.html#" class="option">Inicio</a></li>
-                <li><a href="http://127.0.0.1:5501/index.html#second-container" class="option">Quienes somos</a></li>
-                <li><a href="http://127.0.0.1:5501/index.html#third-container" class="option">Recetas</a></li>
-                <a href="#" class="logo"><img src="./imagenes/FreshFlavors.webp" alt=""></a></li>
-                <li><a href="http://127.0.0.1:5501/index.html#fourth-container" class="option">Videos</a></li>
-                <li><a href="#contactanos" class="option">Contáctanos</a></li>
-                <li><a href="login_register.html" class="suscription">Ingresa</a></li>
-            </ul>
-        </div>
-    </header>
+                <ul id="sidebar" class="hidden">
+                    <li><a href="index.html" class="option">Inicio</a></li>
+                    <li><a href="about-us.html" class="option">Quienes somos</a></li>
+                    <li><a href="recetas.html" class="option">Recetas</a></li>
+                    <a href="#" class="logo"><img src="./imagenes/FreshFlavors.webp" alt=""></a></li>
+                    <li><a href="video.html" class="option">Videos</a></li>
+                    <li><a href="#contactanos" class="option">Contáctanos</a></li>
+                    <div class="dropdown" style="float:right;">
+                        <button class="dropbtn">...</button>
+                        <div class="dropdown-content">
+                            <a href="profile-section.html">Mi perfil</a>
+                            <a href="#">Mis recetas</a>
+                            <a href="#" id="exit">Salir</a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </header>
+        <!-- </header> -->
 
         <div class="container light-style flex-grow-1 container-p-y">
             <h4 class="font-weight-bold py-3 mb-4">
