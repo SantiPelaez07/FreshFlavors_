@@ -53,13 +53,11 @@ const sidebar = document.querySelector("#sidebar")
 const option = document.querySelector(".option")
 
 btnopenSidebar.addEventListener("click" , (e) => {
-e.preventDefault()
 sidebar.classList.toggle("show") 
 
 })
 
 option.addEventListener("click", (event) => {
-  event.preventDefault();
   sidebar.classList.toggle("show")
 })
 
