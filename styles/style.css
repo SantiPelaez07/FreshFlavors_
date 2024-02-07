@@ -49,7 +49,11 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
+}
+
+.marca {
+    color: #f8b435;
 }
 
 .main-title {
@@ -58,6 +62,7 @@ body{
     /* No modifcar - Esencial para el responsive- Si lo va a modificar usar clamp-generator */
     font-size: clamp(1.8125rem, 1.3125rem + 1.6vw, 2.8125rem);
     text-align: center;
+    width: 100%;
 }
 
 section{
@@ -91,6 +96,7 @@ section{
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 17.5px;
+    cursor: pointer;
 }
 
 .input_ingredients:hover{
@@ -307,6 +313,23 @@ section{
     font-size: 25px;
     color: rgb(0, 0, 0);
 }
+@media(max-width: 1680px) {
+    .containers{
+        height: 100vh;
+        padding: 140px;
+    }
+
+    .containers_content img {
+        min-width: 300px;
+        min-height: 300px;
+        height: 90%;
+        width: 90%;
+    }
+}
+
+
+
+
 
 @media only screen and (max-width: 1100px) {
 
@@ -378,8 +401,9 @@ section{
     }
 
     .first-container{
-        height: auto;
+        justify-content: center;    
     }
+
 
     .sections_footer ul{
         margin-top: 20px;

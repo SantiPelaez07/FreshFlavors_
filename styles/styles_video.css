@@ -84,7 +84,7 @@ section img:hover {
     font-size: 15px;
     text-align: center;
     font-size: clamp(1.875rem, 1.1538rem + 2.3077vw, 3.75rem);
-    margin-top: 130px;
+    top: 100px;
 }
 
 /*=========CARD=========*/
@@ -175,4 +175,8 @@ section img:hover {
 .card-body {
     display: flex;
     flex-direction: column;
+}
+
+.wendy-section{
+    margin-top: 70px;
 }

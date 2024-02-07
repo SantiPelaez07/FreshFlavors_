@@ -148,6 +148,10 @@ function validatePasswordSegurity(){
     //Deseamos que el usuario cree su registro apartir de una serie de exigencia para la seguridad de su contraseña, con esta funcion hacemos uso de una expresión regular.
     const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$/;
 
+    if (!user.value || !email.value || !password.value) {
+        return {validated: false, message: "Hay campo(s) sin completar"}
+    }
+
     if (regex.test(password.value)) {
         return {validated: true}
     }

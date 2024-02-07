@@ -12,11 +12,12 @@
   }
 
   .nav-principal {
-      /* position: fixed; */
+      position: fixed;
       top: 0;
       width: 100%;
       height: 70px;
       background: #F6BC4E;
+      z-index: 1000;
   }
 
   .nav-principal ul {
@@ -66,7 +67,7 @@
   }
 
   .nav-principal .suscription {
-      padding: 15px 50px;
+      padding: 15px 20px;
   }
 
   .nav-principal .openSidebar {

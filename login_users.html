@@ -22,7 +22,7 @@
             <button class="openSidebar"> <i class='bx bx-menu'></i></button>
 
             <ul id="sidebar" class="hidden">
-                <li><a href="index.html" class="option">Inicio</a></li>
+                <li><a href="#" class="option">Inicio</a></li>
                 <li><a href="#second-container" class="option">Quienes somos</a></li>
                 <li><a href="#third-container" class="option">Recetas</a></li>
                 <a href="#" class="logo"><img src="./imagenes/FreshFlavors.webp" alt=""></a></li>
@@ -32,26 +32,10 @@
                     <button class="dropbtn">...</button>
                     <div class="dropdown-content">
                         <a href="profile-section.html">Mi perfil</a>
-                        <a href="#">Mis recetas</a>
+                        <a href="subirReceta.html">Mis recetas</a>
                         <a href="#" id="exit">Salir</a>
                     </div>
                     </div>
-<!-- 
-                <li class="desplegable">
-                    <a href="#" class="dropDown-link">User
-                    <i class='bx bx-chevron-down imgDropdown'></i>
-                    <input type="checkbox" class="checkDrop">
-                </a>
-                <div class="dropDown-content">
-                    <ul class="subLista">
-                        <li class="dropDownOptions"><a href="#" class="optionsLink">Mi perfil</a></li>
-                        <li class="dropDownOptions"><a href="#" class="optionsLink">Mis recetas</a></li>
-                        <li class="dropDownOptions"><a href="#" class="optionsLink">Salir</a></li>
-                    </ul>
-                </div>
-                </li> -->
-
-                
             </ul>
         </div>
     </header>
@@ -103,7 +87,7 @@
                     <p class="recipes_paragraph content_paragraphs">Descubre nuestras irresistibles recomendaciones
                         culinarias, cuidadosamente seleccionadas para deleitar tu paladar y llevar tus experiencias
                         gastronómicas a nuevos niveles de sabor y creatividad.</p>
-                    <button>Míralas aquí <i class="bi bi-caret-right-fill"></i></button>
+                    <button class="btnRecetas">Míralas aquí <i class="bi bi-caret-right-fill"></i></button>
                 </div>
                 <img src="./imagenes/Recetas.webp" alt="Recetas">
             </div>
@@ -124,6 +108,7 @@
                 </div>
             </div>
         </section>
+
     </main>
 
 
@@ -137,7 +122,7 @@
                 <h3>No te pierdas de nada!</h3>
                 <form class="form" action="" id="form">
 
-                    <input type="text" name="email_id" id="email_id" placeholder="Ingresa tu email">
+                    <input type="email" name="email_id" id="email_id" placeholder="Ingresa tu email">
                     <button class="send-email" type="submit" id="button" value="Send Email">Suscríbete</button>
                     <!-- <label for="email_id">email_id</label>
             <input type="text" name="email_id" id="email_id"> -->

@@ -1,0 +1,69 @@
+.mantenimiento {
+    top: 70px;
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    animation-name: palpito;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes palpito {
+    0%{
+        transform: scale(1.05);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.05);
+    }
+}
+
+.mantenimiento img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F6BC4E;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.mantenimiento .alert1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px 0;
+    font-size: 20px;
+}
+
+.mantenimiento .alert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    width: 100%;
+}
+
+.mantenimiento i {
+    color: #F6BC4E;
+    padding: 0 20px;
+}
+
+
+@media (max-width: 520px) {
+    .mantenimiento img {
+        height: 100px;
+        width: 300px;
+    }
+
+    .mantenimiento i {
+        padding: 0 5px;
+    }
+
+    .mantenimiento .alert, .alert1 {
+        font-size: 14px;
+        text-align: center;
+        font-size: 10px;
+    }
+}

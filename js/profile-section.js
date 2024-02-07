@@ -1,5 +1,8 @@
 let listLocal;
 
+//Botón de cancelar
+const btnCancelar = document.querySelector(".btn-default");
+
 //Button save Changes
 const saveChanges = document.querySelector(".btn-primary")
 
@@ -10,6 +13,13 @@ const seleccionSexo = document.querySelector(".custom-select")
   const contraseñaActual = document.getElementById("contraseña-actual");
   const nuevaContraseña = document.getElementById("nueva-contraseña");
   const confirmacionNuevaContraseña = document.getElementById("confirmacion-nueva-contraseña");
+
+
+btnCancelar.addEventListener("click", (event) => {
+  event.preventDefault();
+  window.location.href = "/login_users.html"
+  
+})
 
 
 seleccionSexo.addEventListener("input", (e) => {
