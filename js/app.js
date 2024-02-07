@@ -53,26 +53,13 @@ const sidebar = document.querySelector("#sidebar")
 const option = document.querySelector(".option")
 
 btnopenSidebar.addEventListener("click" , (e) => {
-e.preventDefault()
 sidebar.classList.toggle("show") 
 
 })
 
 option.addEventListener("click", (event) => {
-  event.preventDefault();
   sidebar.classList.toggle("show")
 })
-// function cerrar (){ 
-//   sidebar.click()
-// }
-// })
-
-
-
-// document.addEventListener("click", (event) => {
-//   event.preventDefault();
-//   event.target.conta
-// })
 
 
 const inputPrincipal = document.querySelector(".input_ingredients");
@@ -80,9 +67,16 @@ const btnPrincipal = document.querySelector(".btn-animation");
 
 btnPrincipal.addEventListener("click", (event) => {
   event.preventDefault();
+    if (!inputPrincipal.value) {
+    showAlert("No has ingresado ningún tipo de dato");
+    return
+  }
+
   console.log(input.value);
   input.value = inputPrincipal.value
   window.location.href = "/recetas.html"
+
+
 })
 
 
@@ -92,3 +86,5 @@ btnReceta.addEventListener("click", (e) => {
   e.preventDefault();
   window.location.href ="/recetas.html"
 })
+
+
