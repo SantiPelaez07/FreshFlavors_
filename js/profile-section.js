@@ -38,6 +38,7 @@ seleccionSexo.addEventListener("input", (e) => {
 document.addEventListener("DOMContentLoaded", (event) => {
     event.preventDefault();
 
+
     const inputUser = document.querySelector(".input-usuario")
     const inputEmail = document.querySelector(".input-email")
 
@@ -46,8 +47,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const listLocal = JSON.parse(localUser)
     getUser()
   
-  
-    console.log(`Contraseña: ${localUser}`)
   
       function getUser() {
         inputUser.value = ""
@@ -69,6 +68,7 @@ saveChanges.addEventListener("click", (e) => {
   e.preventDefault();
 
   validarContraseña();
+  editarDBJson();
 })
 
 
@@ -78,13 +78,13 @@ saveChanges.addEventListener("click", (e) => {
 
 function validarContraseña() {
 
-  if (!nuevaContraseña.value  && !confirmacionNuevaContraseña.value && !contraseñaActual.value) {
-    return
-  }
+  // if (!nuevaContraseña.value  && !confirmacionNuevaContraseña.value && !contraseñaActual.value) {
+  //   editarDBJson(); 
+  // }
 
 
-  console.log(contraseñaActual.value);
-  console.log(listLocal[0].password)
+  // console.log(contraseñaActual.value);
+  // console.log(listLocal[0].password)
 
   if (contraseñaActual.value !== listLocal[0].password) {
     showAlert("La contraseña actual no es correcta")
@@ -159,3 +159,49 @@ function    showAlert(message, title = "Error!", icon =  "error" ) {
 }
 
 
+
+
+
+
+//Función para edita db.json
+
+async function editarDBJson() {
+  const URL = "http://localhost:3000/users";
+  const data = localStorage.getItem("datas");
+  const jsonData = JSON.parse(data);
+  const IDData = jsonData[0].id; 
+
+  // Nuevos datos
+  const usuario  = document.querySelector(".input-usuario").value;
+  const email = document.querySelector(".input-email").value;
+
+  // Body Data
+  const bodyData = {
+    "email": email,
+    "user": usuario
+  };
+
+  if (nuevaContraseña.value && confirmacionNuevaContraseña.value && contraseñaActual.value) {
+    bodyData.password = nuevaContraseña.value;
+  } else{
+    bodyData.password = jsonData[0].password;
+  }
+
+  const response = await fetch(`${URL}/${IDData}`, {
+    method: "PUT",
+    headers: {"Content-Type" : "application/json"},
+    body: JSON.stringify(bodyData) 
+  });
+
+  if (response.ok) {
+    const newData = await response.json();
+    // Actualizar datos en el Local Storage
+    localStorage.setItem("datas", JSON.stringify([newData]));
+    // Actualizar valores en el formulario
+    document.querySelector(".input-usuario").value = newData.user;
+    document.querySelector(".input-email").value = newData.email;
+    alert("Datos actualizados correctamente");
+  } else {
+    alert("Error al actualizar datos");
+  }
+}
