@@ -68,7 +68,6 @@ saveChanges.addEventListener("click", (e) => {
   e.preventDefault();
 
   validarContraseña();
-  editarDBJson();
 })
 
 
@@ -78,11 +77,9 @@ saveChanges.addEventListener("click", (e) => {
 
 function validarContraseña() {
 
-  // if (!nuevaContraseña.value  && !confirmacionNuevaContraseña.value && !contraseñaActual.value) {
-  //   editarDBJson(); 
-  // }
-
-
+  if (nuevaContraseña.value  && confirmacionNuevaContraseña.value && contraseñaActual.value) {
+    editarDBJson(); 
+  }
   // console.log(contraseñaActual.value);
   // console.log(listLocal[0].password)
 
@@ -178,10 +175,11 @@ async function editarDBJson() {
   // Body Data
   const bodyData = {
     "email": email,
-    "user": usuario
+    "user": usuario,
+    "password": jsonData[0].password
   };
 
-  if (nuevaContraseña.value && confirmacionNuevaContraseña.value && contraseñaActual.value) {
+  if (nuevaContraseña.value) {
     bodyData.password = nuevaContraseña.value;
   } else{
     bodyData.password = jsonData[0].password;
@@ -200,7 +198,6 @@ async function editarDBJson() {
     // Actualizar valores en el formulario
     document.querySelector(".input-usuario").value = newData.user;
     document.querySelector(".input-email").value = newData.email;
-    alert("Datos actualizados correctamente");
   } else {
     alert("Error al actualizar datos");
   }
