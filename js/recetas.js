@@ -1,4 +1,3 @@
-let btn = document.querySelector(".buscar")
 const input = document.querySelector(".input_ingredients")
 const recetas = document.getElementById("recetas")
 const carouselContainer = document.querySelector(".owl-carousel")
@@ -33,13 +32,54 @@ carouselContainer.addEventListener("click",function (event) {
     }
 })
 
-btn.addEventListener("click", async (event) => {
+const btnBuscar = document.querySelector(".create_recipe");
+
+document.addEventListener("DOMContentLoaded", (event) => {
     event.preventDefault();
+    const StorageUser = localStorage.getItem("datoUser");
+    console.log(StorageUser);
+    input.value = StorageUser
+    if(StorageUser){
+        getData(StorageUser);
+    }
+
+})
+
+btnBuscar.addEventListener("click", async (event) => {
+    event.preventDefault();
+    localStorage.removeItem("datoUser");
     let receta = input.value
     const data = await llamarURL(receta)
     nodoRaroPrueba.innerHTML=''
     data.forEach(dato =>{
         console.log()
+        ingredientes=dato.recipe.ingredientLines.join("#")
+        nodoRaroPrueba.innerHTML+=`
+        <div class="owl-item" style="width: 385px; margin-right: 15px;"><div class="item" id="recetas">
+         <div class="card  w-75 h-75 d-flex justify-content-center align-items-center">
+            <img src="${dato.recipe.image}">
+            <div class="card-body text-center">
+                <div class="card-title">
+                    <h4 class="h4">${dato.recipe.label}</h4>
+                </div>
+                <button type="button" imagenplato="${dato.recipe.image}" calorias="${Math.round(dato.recipe.calories)}" nombreplato="${dato.recipe.label}" ingredientes="${ingredientes}" class="btn  btn-buscar d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Ver receta
+            </button>
+            </div>
+        </div>
+    </div></div>
+        
+        `
+})
+input.value = ""
+})
+
+
+async function getData (StorageUser){
+    const data = await llamarURL(StorageUser)
+    nodoRaroPrueba.innerHTML=''
+    data.forEach(dato =>{
+        console.log("aqui estamos")
         ingredientes=dato.recipe.ingredientLines.join("#")
         nodoRaroPrueba.innerHTML+=`
         <div class="owl-item" style="width: 385px; margin-right: 15px;"><div class="item" id="recetas">
@@ -58,7 +98,10 @@ btn.addEventListener("click", async (event) => {
         
         `
 })
-})
+}
+  
+
+
 document.addEventListener("DOMContentLoaded", async () => {
     const data = await llamarURL('salad')
     imprimirDatos(data )
@@ -75,6 +118,7 @@ async function llamarURL(receta) {
     //llamo a data para obtener los datos de la API
     return data.hits
 }
+
 
 function imprimirDatos(data, nodo = carouselContainer ) {
    

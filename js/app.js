@@ -72,11 +72,9 @@ btnPrincipal.addEventListener("click", (event) => {
     return
   }
 
-  console.log(input.value);
-  input.value = inputPrincipal.value
+  console.log(inputPrincipal.value);
+  localStorage.setItem("datoUser", inputPrincipal.value)
   window.location.href = "/recetas.html"
-  const localInformacion = localStorage.setItem("datoUser", inputPrincipal.value)
-
 })
 
 

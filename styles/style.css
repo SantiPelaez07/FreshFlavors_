@@ -320,10 +320,14 @@ section{
     }
 
     .containers_content img {
-        min-width: 300px;
-        min-height: 300px;
-        height: 90%;
-        width: 90%;
+        min-width: 350px;
+        min-height: 350px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .content_paragraphs {
+        font-size: 16px;
     }
 }
 

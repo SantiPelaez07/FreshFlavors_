@@ -9,11 +9,21 @@
         }
 
          body {
-            background: hsl(0, 0, 94%);
+            background: linear-gradient(
+                rgba(0,0,0,0.7),
+                rgba(0,0,0,0.7)), 
+                url("../imagenes/jason-briscoe-GliaHAJ3_5A-unsplash.jpg") no-repeat;
+            background-size: cover;
         } 
 /* body{
     background: #f6bc4e;
+    hsl(0, 0, 94%)
 } */
+
+.container-fluid {
+    top: 70px;
+    height: 100vh;
+}
 
 .card{
     display: flex;
@@ -128,7 +138,7 @@
     }
 
     button:hover{
-       background: blue !important;
+       background: #F6BC4E !important;
         
     }
 }
@@ -157,7 +167,7 @@
     
 }
 
-    
+
 
 
 .buscar {
@@ -175,4 +185,24 @@
 
 .nav-principal {
     z-index: 1000;
+}
+
+@media(max-width: 1680px) {
+
+    body {
+        top: 70px;
+        background-size: 100rem;
+    }
+
+    .main-content {
+        margin-top: 100px;
+    }
+
+    .container-fluid  {
+        height: 100%;
+    }
+
+    .owl-nav{
+        padding-top: 50px;
+    }
 }
