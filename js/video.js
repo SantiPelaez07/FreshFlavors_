@@ -29,7 +29,7 @@ container.addEventListener("click", (event) => {
 
 //=========FUNCIONES=========
 async function getData() {
-  const URL = "http://localhost:3001/countries"
+  const URL = "http://localhost:3000/countries"
 
   const response = await fetch(URL)
   const data = await response.json()
